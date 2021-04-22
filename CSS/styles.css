@@ -1,0 +1,95 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Metal Mania', cursive;
+font-family: 'Anton', sans-serif; 
+
+Black:      #000000
+White:      #FFFFFE
+Red:        #FF0000
+Yellow:     #FFFF00
+Light grey: #D9D9D9
+Dark grey:  #303336
+
+*/
+
+/*General styles ----------------*/
+
+h1 {
+  font-size: 4rem;
+  padding: 0 50px;
+  font-family: "Metal Mania", cursive;
+  line-height: 75px;
+  color: #000000;
+}
+h2 {
+  font-size: 3rem;
+  padding: 0 50px;
+  font-family: "Metal Mania", cursive;
+  line-height: 50px;
+  letter-spacing: 5px;
+  color: #fffffe;
+}
+h3 {
+  font-size: 2rem;
+  padding: 0 50px;
+  font-family: "Anton", sans-serif;
+  line-height: 45px;
+  color: #303336;
+}
+p {
+  font-size: 1.2rem;
+  padding: 0 50px;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+  color: #000000;
+}
+
+body {
+  margin: 0 5%;
+}
+
+.light-grey-background-div {
+  background-color: #d9d9d9;
+  height: 500px;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 300px;
+  z-index: -1;
+}
+
+.dark-grey-background-div {
+  background-color: #303336;
+  height: 20px;
+}
+
+.yellow-background-div {
+  background-color: #ffff00;
+  height: 500px;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 1400px;
+  z-index: -1;
+}
+
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media (min-width: 641px) {
+  body {
+    margin: 0 10%;
+  }
+}
+/*  Desktop screen sizes-------------*/
+@media (min-width: 801px) {
+}
+/* Extra Large Screens-------------*/
+@media only screen and (min-width: 1281px) {
+  body {
+    margin: 0 20%;
+  }
+}
+/* 
+  -------------*/
+/* 
+  -------------*/
