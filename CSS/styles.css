@@ -50,9 +50,9 @@ body {
 .light-grey-background-div {
   background-color: #d9d9d9;
   height: 500px;
-  width: 60%;
+  width: 90%;
   position: absolute;
-  left: 20%;
+  left: 5%;
   top: 300px;
   z-index: -1;
 }
@@ -65,9 +65,9 @@ body {
 .yellow-background-div {
   background-color: #ffff00;
   height: 500px;
-  width: 60%;
+  width: 90%;
   position: absolute;
-  left: 20%;
+  left: 5%;
   top: 1400px;
   z-index: -1;
 }
@@ -79,6 +79,23 @@ body {
   body {
     margin: 0 10%;
   }
+  .light-grey-background-div {
+    height: 500px;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 300px;
+    z-index: -1;
+  }
+
+  .yellow-background-div {
+    height: 500px;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 1400px;
+    z-index: -1;
+  }
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
@@ -87,6 +104,24 @@ body {
 @media only screen and (min-width: 1281px) {
   body {
     margin: 0 20%;
+  }
+
+  .light-grey-background-div {
+    height: 500px;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 300px;
+    z-index: -1;
+  }
+
+  .yellow-background-div {
+    height: 500px;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 1400px;
+    z-index: -1;
   }
 }
 /* 
