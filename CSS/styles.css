@@ -162,6 +162,20 @@ nav a:hover {
   padding-top: 60px;
 }
 
+/* Footer styles -------------------*/
+footer {
+  background-color: #000000;
+}
+
+.fa-youtube {
+  font-size: 3rem;
+  color: #ff0000;
+}
+.fa-spotify {
+  font-size: 3rem;
+  color: #1db954;
+}
+
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
   .logo-container,
