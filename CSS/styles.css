@@ -72,33 +72,124 @@ body {
   z-index: -1;
 }
 
-/* Media Queries
--------------*/
-/* Tablet and smaller screen sizes-------------*/
-@media (min-width: 641px) {
-  body {
-    margin: 0 10%;
-  }
-  .light-grey-background-div {
-    height: 500px;
-    width: 80%;
-    position: absolute;
-    left: 10%;
-    top: 300px;
-    z-index: -1;
-  }
+/* Header image styling ---------- */
 
-  .yellow-background-div {
-    height: 500px;
-    width: 80%;
-    position: absolute;
-    left: 10%;
-    top: 1400px;
-    z-index: -1;
-  }
+.header-logo-container {
+  margin: 0 auto;
+  width: 100px;
 }
+.header-logo {
+  width: 100px;
+}
+.nav-logo {
+  display: none;
+  height: 68px;
+  width: 60px;
+  background-image: url("/images/Logo-Icon-300px.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Nav styling ------------- */
+.search-box,
+#hamburger-menu,
+#search-menu {
+  display: none;
+}
+.hamburger-label,
+.search-label {
+  color: #fffffe;
+  background-color: #000000;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+/* #search-menu:checked ~ .search-box {
+  display: block;
+} */
+.nav-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #000000;
+}
+.nav-bar-flex {
+  display: flex;
+  padding: 0;
+}
+.nav-search-flex {
+  display: flex;
+}
+nav {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #000000;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  text-decoration: none;
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+  color: #fffffe;
+  padding: 16px 20px;
+}
+
+nav a:hover {
+  color: #fffffe;
+  background-color: #ff0000;
+}
+.current {
+  text-decoration: underline;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 90%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
+  .logo-container,
+  .header-logo {
+    width: 150px;
+  }
+  .nav-bar-container {
+    align-items: center;
+  }
+  .hamburger-label {
+    display: none;
+  }
+  .nav-logo {
+    display: flex;
+  }
+  .nav-search-flex {
+    padding-top: 0;
+  }
+  nav {
+    display: block;
+  }
+  nav li {
+    display: inline-block;
+    padding: 0;
+  }
+  nav ul {
+    margin: 16px 0;
+  }
 }
 /* Extra Large Screens-------------*/
 @media only screen and (min-width: 1281px) {
@@ -122,6 +213,9 @@ body {
     left: 20%;
     top: 1400px;
     z-index: -1;
+  }
+  .sticky {
+    width: 60%;
   }
 }
 /* 

@@ -10,7 +10,34 @@
     </head>
     <body>
         <header>
-            
+            <div class="header-logo-container">
+                <a href="index.html"><img src="images/Logo 1 500px.jpg" class="header-logo" alt="Live.Rock Logo which acts as a home button"></a>
+            </div>
+            <div id="navbar" class="nav-bar-container">
+                <div class="nav-bar-flex">
+                    <div class="nav-logo"></div>
+                    <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="hamburger-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="allPosts.html" class="current">Posts</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav-search-flex">
+                    <label class="search-label" for="search-menu"><i class="fas fa-search"></i></label>
+                    <input type="checkbox" id="search-menu">
+                    <section class="search-box">
+                        <form class="searchbox" action="action_page.php">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Search.." name="Search">
+                        </form>
+                    </section> 
+                </div> 
+            </div>
         </header>
         <main>
             <h1>Hello</h1>
