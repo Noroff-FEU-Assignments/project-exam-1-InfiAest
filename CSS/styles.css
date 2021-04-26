@@ -35,6 +35,17 @@ h3 {
   line-height: 45px;
   color: #303336;
 }
+cite,
+h4 {
+  font-size: 1.5rem;
+  padding: 0 50px;
+  font-family: "Anton", sans-serif;
+  line-height: 45px;
+  color: #303336;
+}
+blockquote p {
+  font-weight: bold;
+}
 p {
   font-size: 1.2rem;
   padding: 0 50px;
@@ -71,7 +82,10 @@ body {
   top: 1400px;
   z-index: -1;
 }
-
+.wp-image-684 {
+  width: 100%;
+  height: auto;
+}
 /* Header image styling ---------- */
 
 .header-logo-container {
