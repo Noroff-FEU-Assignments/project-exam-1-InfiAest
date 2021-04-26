@@ -1,0 +1,38 @@
+.latestPosts {
+  height: 200px;
+}
+
+/* Top posts section  -------------*/
+
+.post-link {
+  text-decoration: none;
+}
+
+.post-container {
+  background-color: #fffffe;
+  width: 430px;
+  height: 450px;
+  padding: 15px 0 0 0;
+  box-shadow: 3px 3px 2px 1px rgba(48, 51, 54, 0.3);
+}
+
+.post-image-container {
+  margin: 0 auto;
+  background-color: #fffffe;
+  width: 400px;
+  height: 265px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.post-image-container:hover > .image-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.4;
+}
+
+.post-container:hover {
+  box-shadow: 3px 3px 2px 1px rgba(48, 51, 54, 0.4);
+}

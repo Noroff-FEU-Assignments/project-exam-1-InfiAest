@@ -1,12 +1,6 @@
-const postContainer = document.querySelector(".post");
+const url = "https://charlottelucas.no/wp-json/acf/v3/posts";
 
-const queryString = document.location.search;
-
-const params = new URLSearchParams(queryString);
-
-const id = params.get("id");
-
-const url = "https://charlottelucas.no/wp-json/wp/v2/posts?consumer_key=ck_3ec56e0df1d84b1124aae1a0a1410ca10118e47c&consumer_secret=cs_aecf0438accdd0f441fdb569b49c89666b4806c3" + id;
+const topPostsContainer = document.querySelector(".topPosts");
 
 async function getPosts() {
 
@@ -31,16 +25,26 @@ getPosts();
 
 function createHTML(result) {
 
-        for(let i = 0; i < result.length; i++) {
+    for(let i = 0; i < result.length; i++) {
 
-            const list = result[i];
+        const posts = result[i].acf;
 
-        console.log(list._links[7]);
+        console.log(posts);
 
-        // console.log(list.attributes[0].options[0]);
-        postContainer.innerHTML += `<h1>${list.title.rendered}</h1>
-                                    
-                                    <div>${list._links[7]}</div>`
-        
+        topPostsContainer.innerHTML += `<div class="post-container">
+                                            <a href="post.html" alt="Link to ${posts.post_title} post" class="post-link">
+                                                <div class="post-image-container" style="background-image: url(${posts.image1})">
+                                                    <div class="image-overlay"></div>
+                                                </div>
+                                                <div class="title-container">
+                                                        <h3>${posts.post_title}</h3>
+                                                </div>
+                                                <div class="excerpt-container">
+                                                    <p>${posts.excerpt}</p>
+                                                </div>
+                                            </a>
+                                        </div>`
+
     }
+
 }

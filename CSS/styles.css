@@ -17,40 +17,32 @@ h1 {
   font-size: 4rem;
   padding: 0 50px;
   font-family: "Metal Mania", cursive;
-  line-height: 75px;
   color: #000000;
 }
 h2 {
   font-size: 3rem;
   padding: 0 50px;
-  font-family: "Metal Mania", cursive;
-  line-height: 50px;
-  letter-spacing: 5px;
-  color: #fffffe;
+  font-family: "Anton", sans-serif;
+  color: #303336;
 }
 h3 {
   font-size: 2rem;
   padding: 0 50px;
-  font-family: "Anton", sans-serif;
-  line-height: 45px;
-  color: #303336;
+  font-family: "Metal Mania", cursive;
+  letter-spacing: 2px;
+  color: #fffffe;
+  margin-top: 0;
 }
-cite,
 h4 {
   font-size: 1.5rem;
   padding: 0 50px;
   font-family: "Anton", sans-serif;
-  line-height: 45px;
   color: #303336;
-}
-blockquote p {
-  font-weight: bold;
 }
 p {
   font-size: 1.2rem;
   padding: 0 50px;
   font-family: "Lato", sans-serif;
-  line-height: 24px;
   color: #000000;
 }
 
@@ -71,6 +63,7 @@ body {
 .dark-grey-background-div {
   background-color: #303336;
   height: 20px;
+  margin: 50px 15px;
 }
 
 .yellow-background-div {
@@ -82,10 +75,7 @@ body {
   top: 1400px;
   z-index: -1;
 }
-.wp-image-684 {
-  width: 100%;
-  height: auto;
-}
+
 /* Header image styling ---------- */
 
 .header-logo-container {
@@ -99,7 +89,7 @@ body {
   display: none;
   height: 68px;
   width: 60px;
-  background-image: url("/images/Logo-Icon-300px.jpg");
+  background-image: url("/images/Logo-Icon-100px.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
