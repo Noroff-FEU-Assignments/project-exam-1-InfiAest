@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Metal+Mania&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+        <link href="css/allPosts.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -41,8 +42,30 @@
             </div>
         </header>
         <main>
-            <h1>Hello</h1>
+            <section class="home-section title-view-container">
+                <h2>All posts</h2>
+                <div class="view-icon-container">
+                    <div id="viewButtonContainer">
+                        <button class="viewButton active" onclick="listView()"><i class="fas fa-th-list"></i></button> 
+                        <button class="viewButton" onclick="gridView()"><i class="fa fa-th-large"></i></button>
+                    </div>
+                </div>
+            </section>
+            <section class="home-section">
+                <div class="allPosts"></div>
+            </section>
+            <section class="home-section">
+                <div class="button-container">
+                    <button class="cta-button" onclick="getPosts()">Load more posts</button>
+                </div>
+            </section>
+            <div class="light-grey-background-div"></div>
+            
+            <div class="yellow-background-div"></div>
+
             <script src="js/generalScript.js"></script>
+            <script src="js/getAllPosts.js"></script>
+            
         </main>
         
         <footer>

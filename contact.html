@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Metal+Mania&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+        <link href="css/contact.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -35,7 +36,45 @@
             </div>
         </header>
         <main>
-            <h1>Hello</h1>
+            <div class="info-container">
+            <h1>Contact us</h1>
+                <p class="contact-info p2">If you would like to contact us please send a message using the form below and we will be in touch as soon as possible. Please allow us 3-4 working days to repond, we are working as fast as we can.</p>
+                <p class="contact-info">We look forward to hearing from you!</p>
+            </div>
+            <p class="validation-message">Congrats! You filled out the form correctly</p>
+            <form id="contactForm">
+                <div>
+                    <label class="form-labels">
+                        <h2 class="form-labels">Name (minimum 5 characters)</h2>
+                        <input name="name" id="name" placeholder="John Smith">
+                    </label>
+                    <div class="form-error" id="nameError"><p class="error-message">Please enter at least 5 characters</p></div>
+                </div>
+                <div>
+                    <label class="form-labels">
+                        <h2 class="form-labels">Email (required)</h2>
+                        <input name="email" id="email" placeholder="johnsmith@mail.com">
+                    </label>
+                    <div class="form-error" id="emailError"><p class="error-message">Please enter a valid email address</p></div>
+                </div>
+                <div>
+                    <label class="form-labels">
+                        <h2 class="form-labels">Subject (minimum 15 characters)</h2>
+                        <input name="subject" id="subject" placeholder="When is the next AC/DC gig?">
+                    </label>
+                    <div class="form-error" id="subjectError"><p class="error-message">Subject must be at least 15 characters</p></div>
+                </div>
+                <div>
+                    <label for="subject" class="form-labels"><h2 class="form-labels">Message</h2></label>
+                        <textarea id="message" name="message" placeholder="Write something here.."></textarea>
+                </div>
+                <div class="form-error" id="messageError"><p class="error-message">Message should be more than 25 characters</p></div>
+                <div class="button-container">
+                    <button class="cta-button">Send Message</button>
+                </div>
+            </form>
+            
+            <script src="js/contact.js"></script>
             <script src="js/generalScript.js"></script>
         </main>
         

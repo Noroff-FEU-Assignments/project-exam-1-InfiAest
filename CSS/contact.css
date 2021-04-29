@@ -1,0 +1,74 @@
+.form-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+input {
+  width: 90%;
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #d9d9d9;
+}
+
+.form-labels {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.form-error {
+  display: none;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  margin-top: 2px;
+}
+
+textarea {
+  height: 200px;
+  width: 90%;
+  margin-left: 15px;
+  border: 2px solid #d9d9d9;
+  padding: 10px;
+}
+
+.validation-message {
+  display: none;
+  color: green;
+}
+
+.contact-info {
+  padding: 0 15px;
+}
+
+.info-container {
+  padding-bottom: 20px;
+}
+
+/*  Desktop screen sizes-------------*/
+@media (min-width: 801px) {
+  input {
+    width: 85%;
+    margin-left: 50px;
+  }
+  textarea {
+    width: 85%;
+    margin-left: 50px;
+  }
+  .error-message {
+    padding-left: 50px;
+  }
+  .contact-info {
+    padding: 0 50px;
+  }
+}
+/* Extra Large Screens-------------*/
+@media only screen and (min-width: 1281px) {
+}
+/* 
+    -------------*/
+/* 
+    -------------*/
