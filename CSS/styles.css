@@ -61,11 +61,11 @@ main {
 
 .light-grey-background-div {
   background-color: #d9d9d9;
-  height: 500px;
+  height: 560px;
   width: 90%;
   position: absolute;
   left: 5%;
-  top: 220px;
+  top: 240px;
   z-index: -1;
 }
 
@@ -172,9 +172,6 @@ nav a:hover {
   width: 90%;
   z-index: 10;
 }
-.sticky + .content {
-  padding-top: 60px;
-}
 
 /* Button styling ------------- */
 .cta-button {
@@ -262,11 +259,11 @@ footer {
   }
 
   .light-grey-background-div {
-    height: 500px;
+    height: 560px;
     width: 90%;
     position: absolute;
     left: 5%;
-    top: 300px;
+    top: 340px;
     z-index: -1;
   }
 
@@ -310,11 +307,11 @@ footer {
   }
 
   .light-grey-background-div {
-    height: 500px;
+    height: 560px;
     width: 60%;
     position: absolute;
     left: 20%;
-    top: 300px;
+    top: 340px;
     z-index: -1;
   }
 

@@ -1,4 +1,6 @@
-const url = "https://charlottelucas.no/wp-json/acf/v3/posts?per_page=100";
+/* Getting the latest posts --------------*/
+
+const url = "https://charlottelucas.no/wp-json/wp/v2/posts?per_page=100";
 
 const latestPostsContainer1 = document.querySelector(".latestPostsContainer1");
 const latestPostsContainer2 = document.querySelector(".latestPostsContainer2");
@@ -74,7 +76,7 @@ function createLatestPosts(result) {
 
 
 
-/* slideshow function for top posts --------------*/
+/* Slideshow function for latest posts --------------*/
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -102,3 +104,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
+/* Getting the top posts --------------*/

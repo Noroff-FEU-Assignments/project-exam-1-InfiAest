@@ -1,40 +1,30 @@
-const url = "https://charlottelucas.no/wp-json/acf/v3/posts";
+const url = "https://charlottelucas.no/wp-json/wp/v2/posts";
 count = 1;
-totalPages = 1;
+totalPages = 0;
 
 const allPostsContainer = document.querySelector(".allPosts");
+const button = document.querySelector(".cta-button");
 
 async function getPosts() {
 
     try {
+        const response = await fetch(url);
 
-        if(count == 1) {
+        totalPages = response.headers.get('X-WP-TotalPages');
+
+
+        if (totalPages >= count) {
             const response = await fetch(url + "?page=" + count);
 
-            for (let [key, value] of response.headers) {
-                console.log(key + value);
-              }
-
-            // console.log(response.headers.get('Content-Type'));
-
-            // for (var pair of response.headers.entries()) { // accessing the entries
-            //     if (pair[0] === 'X-WP-TotalPages') { // key I'm looking for in this instance
-            //       totalPages = pair[1];
-            //     }
-            //     console.log(pair[0]);
-            //     console.log(pair[1]);
-            // }
+            const result = await response.json();
+    
+            createHTML(result);
+    
+            count++;
+        } else {
+            button.style.backgroundColor = "#303336";
+            button.innerHTML = "No more posts to show";
         }
-
-        const response = await fetch(url + "?page=" + count);
-
-        console.log(totalPages);
-
-        const result = await response.json();
-
-        createHTML(result);
-
-        count++;
 
     }
 
@@ -52,6 +42,8 @@ function createHTML(result) {
     for(let i = 0; i < result.length; i++) {
 
         const posts = result[i].acf;
+
+        console.log(result[i]);
 
         allPostsContainer.innerHTML += `<div class="post-container">
                                             <a href="post.html" alt="Link to ${posts.post_title} post" class="post-link">
