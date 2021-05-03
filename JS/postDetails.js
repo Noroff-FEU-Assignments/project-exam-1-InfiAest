@@ -36,7 +36,7 @@ function createPostDetails(details) {
                                     <div class="post-image-container-2" style="background-image: url(${postDetails.image2})"></div>
                                     <h4 class="latest-quote">${postDetails.quote}</h4>
                                     <div class="dark-grey-div-postpage"></div>
-                                    <div class="post-image-container-1" style="background-image: url(${postDetails.image1})"></div>
+                                    <div class="post-image-container-1" style="background-image: url(${postDetails.image3})"></div>
                                     <p>${postDetails.paragraph2}</p>
                                     <p>${postDetails.paragraph3}</p>`
 

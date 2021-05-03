@@ -28,15 +28,15 @@
 .post-image-container-1 {
   margin: 0 auto;
   width: calc(100% - 30px);
-  height: 500px;
+  height: 250px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .post-image-container-2 {
   margin: 0 auto;
-  width: calc(100% - 140px);
-  height: 300px;
+  width: 60%;
+  height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -82,6 +82,12 @@
     top: 2000px;
     z-index: -1;
   }
+  .post-image-container-2 {
+    height: 600px;
+  }
+  .post-image-container-1 {
+    height: 450px;
+  }
 }
 
 /*  Desktop screen sizes-------------*/
@@ -110,6 +116,12 @@
     left: 5%;
     top: 2000px;
     z-index: -1;
+  }
+  .post-image-container-2 {
+    height: 700px;
+  }
+  .post-image-container-1 {
+    height: 500px;
   }
 }
 
