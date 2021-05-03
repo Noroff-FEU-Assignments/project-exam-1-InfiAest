@@ -46,7 +46,7 @@ function createHTML(result) {
         console.log(result[i]);
 
         allPostsContainer.innerHTML += `<div class="post-container">
-                                            <a href="post.html" alt="Link to ${posts.post_title} post" class="post-link">
+                                            <a href="post.html?id=${result[i].id}" alt="Link to ${posts.post_title} post" class="post-link">
                                                 <div class="post-image-container" style="background-image: url(${posts.image1})">
                                                     <div class="title-container">
                                                         <h3>${posts.post_title}</h3>

@@ -1,0 +1,147 @@
+.light-grey-div-postpage {
+  background-color: #d9d9d9;
+  height: 650px;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 800px;
+  z-index: -1;
+}
+
+.dark-grey-div-postpage {
+  background-color: #303336;
+  height: 20px;
+  margin: 50px 0;
+  width: 75%;
+}
+
+.yellow-div-postpage {
+  background-color: #ffff00;
+  height: 500px;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 2400px;
+  z-index: -1;
+}
+
+.post-image-container-1 {
+  margin: 0 auto;
+  width: calc(100% - 30px);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.post-image-container-2 {
+  margin: 0 auto;
+  width: calc(100% - 140px);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.latest-quote {
+  color: #303336;
+  padding: 0 30px;
+}
+.latest-quote::before {
+  content: open-quote;
+  font-size: 1.2rem;
+}
+.latest-quote::after {
+  content: close-quote;
+  font-size: 1.2rem;
+}
+
+/* Tablet and smaller screen sizes-------------*/
+@media (min-width: 641px) {
+  .light-grey-div-postpage {
+    background-color: #d9d9d9;
+    height: 400px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 800px;
+    z-index: -1;
+  }
+
+  /* .dark-grey-background-div {
+          background-color: #303336;
+          height: 20px;
+          margin: 50px 0;
+        } */
+
+  .yellow-div-postpage {
+    background-color: #ffff00;
+    height: 280px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 2000px;
+    z-index: -1;
+  }
+}
+
+/*  Desktop screen sizes-------------*/
+@media (min-width: 801px) {
+  .light-grey-div-postpage {
+    background-color: #d9d9d9;
+    height: 500px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 900px;
+    z-index: -1;
+  }
+
+  /* .dark-grey-background-div {
+              background-color: #303336;
+              height: 20px;
+              margin: 50px 0;
+            } */
+
+  .yellow-div-postpage {
+    background-color: #ffff00;
+    height: 290px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 2000px;
+    z-index: -1;
+  }
+}
+
+/* Extra Large Screens-------------*/
+@media only screen and (min-width: 1281px) {
+  .light-grey-div-postpage {
+    background-color: #d9d9d9;
+    height: 500px;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 900px;
+    z-index: -1;
+  }
+
+  /* .dark-grey-background-div {
+                  background-color: #303336;
+                  height: 20px;
+                  margin: 50px 0;
+                } */
+
+  .yellow-div-postpage {
+    background-color: #ffff00;
+    height: 280px;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 2040px;
+    z-index: -1;
+  }
+}
+/* 
+      -------------*/
+/* 
+      -------------*/

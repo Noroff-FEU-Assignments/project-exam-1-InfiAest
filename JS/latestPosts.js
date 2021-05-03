@@ -35,42 +35,46 @@ function createLatestPosts(result) {
 
     for(let i = 0; i < result.length; i++) {
 
-        const posts = result[i].acf;
-
         if (i == 4) {
             break;
         }
 
-        console.log(posts);
-
     }  
-    latestPostsContainer1.innerHTML += `<div class="post-image-container" style="background-image: url(${result[0].acf.image1})">
-                                            <div class="title-container">
-                                                <h3>${result[0].acf.post_title}</h3>
-                                                <p class="latest-quote">${result[0].acf.quote}</p>
+    latestPostsContainer1.innerHTML += `<a href="post.html?id=${result[0].id}" alt="Link to ${result[0].acf.post_title} post" class="post-link">
+                                            <div class="post-image-container" style="background-image: url(${result[0].acf.image1})">
+                                                <div class="title-container">
+                                                    <h3>${result[0].acf.post_title}</h3>
+                                                    <p class="latest-quote">${result[0].acf.quote}</p>
+                                                </div>
                                             </div>
-                                        </div>`
+                                        </a>`
 
-    latestPostsContainer2.innerHTML += `<div class="post-image-container" style="background-image: url(${result[1].acf.image1})">
-                                            <div class="title-container">
-                                                <h3>${result[1].acf.post_title}</h3>
-                                                <p class="latest-quote">${result[1].acf.quote}</p>
+    latestPostsContainer2.innerHTML += `<a href="post.html?id=${result[1].id}" alt="Link to ${result[1].acf.post_title} post" class="post-link">
+                                            <div class="post-image-container" style="background-image: url(${result[1].acf.image1})">
+                                                <div class="title-container">
+                                                    <h3>${result[1].acf.post_title}</h3>
+                                                    <p class="latest-quote">${result[1].acf.quote}</p>
+                                                </div>
                                             </div>
-                                        </div>`
+                                        </a>`
 
-    latestPostsContainer3.innerHTML += `<div class="post-image-container" style="background-image: url(${result[2].acf.image1})">
-                                            <div class="title-container">
-                                                <h3>${result[2].acf.post_title}</h3>
-                                                <p class="latest-quote">${result[2].acf.quote}</p>
+    latestPostsContainer3.innerHTML += `<a href="post.html?id=${result[2].id}" alt="Link to ${result[2].acf.post_title} post" class="post-link">
+                                            <div class="post-image-container" style="background-image: url(${result[2].acf.image1})">
+                                                <div class="title-container">
+                                                    <h3>${result[2].acf.post_title}</h3>
+                                                    <p class="latest-quote">${result[2].acf.quote}</p>
+                                                </div>
                                             </div>
-                                        </div>`
+                                        </a>`
 
-    latestPostsContainer4.innerHTML += `<div class="post-image-container" style="background-image: url(${result[3].acf.image1})">
-                                            <div class="title-container">
-                                                <h3>${result[3].acf.post_title}</h3>
-                                                <p class="latest-quote">${result[3].acf.quote}</p>
+    latestPostsContainer4.innerHTML += `<a href="post.html?id=${result[3].id}" alt="Link to ${result[3].acf.post_title} post" class="post-link">
+                                            <div class="post-image-container" style="background-image: url(${result[3].acf.image1})">
+                                                <div class="title-container">
+                                                    <h3>${result[3].acf.post_title}</h3>
+                                                    <p class="latest-quote">${result[3].acf.quote}</p>
+                                                </div>
                                             </div>
-                                        </div>`
+                                        </a>`
 
 }
 
