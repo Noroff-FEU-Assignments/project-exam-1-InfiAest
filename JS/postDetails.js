@@ -4,10 +4,11 @@ const id = params.get("id");
 
 const url = "https://charlottelucas.no/wp-json/wp/v2/posts/" + id;
 
+const pageTitle = document.querySelector("title");
 const postHeaders = document.querySelector(".post-headers");
-const postImage1 = document.querySelector(".post-image1");
-const postImage2 = document.querySelector(".post-image2");
-const postImage3 = document.querySelector(".post-image3");
+const postImage1 = document.querySelector(".image-1");
+const postImage2 = document.querySelector(".image-2");
+const postImage3 = document.querySelector(".image-3");
 const postParagraph1 = document.querySelector(".post-paragraph1");
 const postquote = document.querySelector(".post-quote");
 const postParagraph2 = document.querySelector(".post-paragraph2");
@@ -36,19 +37,21 @@ function createPostDetails(details) {
 
     console.log(postDetails);
 
+    pageTitle.innerHTML += ` | ${postDetails.post_title}`
+
     postHeaders.innerHTML += `<h1>${postDetails.post_title}</h1>
                                     <h2>Written by: ${postDetails.author}</h2>
                                     <h3 class="version2">Date: ${details.date}</h3>`
     
-    postImage1.innerHTML += `<a role="button" id="image-button"><img id="myImg" class="image-1" src="${postDetails.image1}" alt=""></a>`
+    postImage1.src = `${postDetails.image1}`
 
     postParagraph1.innerHTML+= `<p class="p2">${postDetails.paragraph1}</p>`
 
-    postImage2.innerHTML += `<img class="image-2" src="${postDetails.image2}" alt="">`
+    postImage2.src = `${postDetails.image2}`
 
     postquote.innerHTML += `<h3 class="version2 latest-quote">${postDetails.quote}</h3>`
 
-    postImage3.innerHTML += `<div class="post-image-container-1"><img class="image-3" src="${postDetails.image3}" alt=""></div>`
+    postImage3.src = `${postDetails.image3}`
 
     postParagraph2.innerHTML += `<p class="p3">${postDetails.paragraph2}</p>`
 
