@@ -1,50 +1,58 @@
-.light-grey-div-postpage {
+.container {
+  position: relative;
+}
+.post-image1,
+.post-paragraph1,
+.post-image2,
+.post-image3,
+.post-paragraph2 {
+  position: relative;
+}
+.light-grey-background-div {
   background-color: #d9d9d9;
-  height: 650px;
-  width: 90%;
+  height: calc(100% - 275px);
   position: absolute;
-  left: 5%;
-  top: 800px;
+  width: 100%;
+  padding: 15px;
+  right: -15px;
+  top: 100px;
   z-index: -1;
 }
-
-.dark-grey-div-postpage {
-  background-color: #303336;
-  height: 20px;
-  margin: 50px 0;
-  width: 75%;
-}
-
-.yellow-div-postpage {
+.yellow-background-div {
   background-color: #ffff00;
-  height: 500px;
-  width: 90%;
+  height: calc(100% - 115px);
   position: absolute;
-  left: 5%;
-  top: 2400px;
+  width: 100%;
+  padding: 15px;
+  right: -15px;
+  top: 100px;
   z-index: -1;
 }
 
 .post-image-container-1 {
+  display: block;
   margin: 0 auto;
   width: calc(100% - 30px);
-  height: 250px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: min-content;
+}
+.image-1,
+.image-2,
+.image-3 {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 .post-image-container-2 {
+  display: block;
   margin: 0 auto;
   width: 60%;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: min-content;
 }
 
 .latest-quote {
   color: #303336;
   padding: 0 30px;
+  margin: 50px 0;
 }
 .latest-quote::before {
   content: open-quote;
@@ -55,103 +63,87 @@
   font-size: 1.2rem;
 }
 
+/* Image modal Styling
+-------------*/
+.image-pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all 0.35s ease-in;
+  z-index: 20;
+}
+
+.modal-header {
+  display: block;
+  height: 50px;
+}
+
+.modal-content {
+  position: relative;
+  max-width: max-content;
+  max-height: max-content;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.modal-img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 85vh;
+}
+
+.close {
+  color: #fffffe;
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
-  .light-grey-div-postpage {
-    background-color: #d9d9d9;
-    height: 400px;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 800px;
-    z-index: -1;
-  }
-
-  /* .dark-grey-background-div {
-          background-color: #303336;
-          height: 20px;
-          margin: 50px 0;
-        } */
-
-  .yellow-div-postpage {
-    background-color: #ffff00;
-    height: 280px;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 2000px;
-    z-index: -1;
-  }
-  .post-image-container-2 {
-    height: 600px;
-  }
-  .post-image-container-1 {
-    height: 450px;
-  }
 }
 
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
-  .light-grey-div-postpage {
+  .light-grey-background-div {
     background-color: #d9d9d9;
-    height: 500px;
-    width: 90%;
+    height: calc(100% - 875px);
     position: absolute;
-    left: 5%;
-    top: 900px;
+    width: 100%;
+    padding: 15px;
+    right: -15px;
+    top: 250px;
     z-index: -1;
   }
-
-  /* .dark-grey-background-div {
-              background-color: #303336;
-              height: 20px;
-              margin: 50px 0;
-            } */
-
-  .yellow-div-postpage {
+  .yellow-background-div {
     background-color: #ffff00;
-    height: 290px;
-    width: 90%;
+    height: calc(100% - 275px);
     position: absolute;
-    left: 5%;
-    top: 2000px;
+    width: 100%;
+    padding: 15px;
+    right: -15px;
+    top: 250px;
     z-index: -1;
-  }
-  .post-image-container-2 {
-    height: 700px;
-  }
-  .post-image-container-1 {
-    height: 500px;
   }
 }
 
 /* Extra Large Screens-------------*/
 @media only screen and (min-width: 1281px) {
-  .light-grey-div-postpage {
-    background-color: #d9d9d9;
-    height: 500px;
-    width: 60%;
-    position: absolute;
-    left: 20%;
-    top: 900px;
-    z-index: -1;
-  }
-
-  /* .dark-grey-background-div {
-                  background-color: #303336;
-                  height: 20px;
-                  margin: 50px 0;
-                } */
-
-  .yellow-div-postpage {
-    background-color: #ffff00;
-    height: 280px;
-    width: 60%;
-    position: absolute;
-    left: 20%;
-    top: 2040px;
-    z-index: -1;
-  }
 }
 /* 
       -------------*/

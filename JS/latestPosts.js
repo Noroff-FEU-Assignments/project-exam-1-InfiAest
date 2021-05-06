@@ -111,4 +111,35 @@ function showSlides(n) {
 
 
 
-/* Getting the top posts --------------*/
+// /* Getting the top posts --------------*/
+
+// const topPostsContainer = document.querySelector(".topPosts");
+
+// var parser = new DOMParser();
+// var htmlDoc = parser.parseFromString;
+
+// function createTopViewedPosts(result) {
+
+//     for(let i = 0; i < result.length; i++) {
+//          console.log(result[i].content.rendered);
+
+//         // topPostsContainer.innerHTML += `<div>${result[i].acf.post_title}
+//         //                                     ${result[i].content.rendered}</div>`
+
+//     }
+
+//     // const postViewsString = document.querySelector(".post-views-count");
+    
+//     // // console.log(postViewsString.innerHTML);
+
+//     // const postViews = postViewsString.innerHTML;
+
+//     // // console.log(postViews);
+
+//     // if (parseInt(postViews) === 2) {
+//     //     console.log(postViews);
+//     // } else {
+//     //     console.log("nope");
+//     // }
+
+// }

@@ -1,4 +1,30 @@
 /* Top posts section  -------------*/
+.container {
+  position: relative;
+}
+.allPosts {
+  position: relative;
+}
+.light-grey-background-div {
+  background-color: #d9d9d9;
+  height: 1350px;
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  right: -15px;
+  top: -15px;
+  z-index: -1;
+}
+.yellow-background-div {
+  background-color: #ffff00;
+  height: 900px;
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  right: -15px;
+  top: 3400px;
+  z-index: -1;
+}
 
 /* View buttons */
 .viewButton {
@@ -75,6 +101,10 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
+.title-view-container {
+  margin-bottom: 30px;
+}
+
 .post-container:hover {
   box-shadow: 3px 3px 2px 1px rgba(48, 51, 54, 0.4);
 }
@@ -86,6 +116,26 @@
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
+  .light-grey-background-div {
+    background-color: #d9d9d9;
+    height: 800px;
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    right: -15px;
+    top: -15px;
+    z-index: -1;
+  }
+  .yellow-background-div {
+    background-color: #ffff00;
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    right: -15px;
+    top: 1300px;
+    z-index: -1;
+  }
   .allPosts {
     display: grid;
     grid-template-columns: 1fr 1fr;

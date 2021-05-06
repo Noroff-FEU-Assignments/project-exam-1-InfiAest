@@ -14,10 +14,11 @@ Dark grey:  #303336
 /*General styles ----------------*/
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 0 15px;
   font-family: "Metal Mania", cursive;
   color: #000000;
+  margin-bottom: 15px;
 }
 h2 {
   font-size: 2rem;
@@ -25,31 +26,37 @@ h2 {
   font-family: "Anton", sans-serif;
   color: #303336;
 }
+/*homepage h3*/
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 0 25px;
   font-family: "Metal Mania", cursive;
   letter-spacing: 2px;
   color: #fffffe;
-  margin-top: 0;
+  margin-bottom: 15px;
 }
-h4 {
-  font-size: 1.3rem;
+/*Rest h3*/
+.version2 {
+  font-size: 1.2rem;
   padding: 0 15px;
   font-family: "Anton", sans-serif;
   color: #303336;
+  margin-bottom: 15px;
 }
+
 p {
   font-size: 1rem;
-  padding: 15px 50px;
+  padding: 30px 50px;
   line-height: 1.6rem;
   font-family: "Lato", sans-serif;
   color: #000000;
 }
-
 .p2 {
   font-weight: bold;
   line-height: 2rem;
+}
+.p3 {
+  font-weight: bold;
 }
 
 body {
@@ -59,30 +66,10 @@ main {
   margin: 0 15px;
 }
 
-.light-grey-background-div {
-  background-color: #d9d9d9;
-  height: 560px;
-  width: 90%;
-  position: absolute;
-  left: 5%;
-  top: 300px;
-  z-index: -1;
-}
-
 .dark-grey-background-div {
   background-color: #303336;
   height: 20px;
   margin: 50px 0;
-}
-
-.yellow-background-div {
-  background-color: #ffff00;
-  height: 500px;
-  width: 90%;
-  position: absolute;
-  left: 5%;
-  top: 2000px;
-  z-index: -1;
 }
 
 /* Header image styling ---------- */
@@ -177,10 +164,10 @@ nav a:hover {
 .cta-button {
   background-color: #ff0000;
   border: none;
-  width: 300px;
+  width: 250px;
   margin: 50px 0;
   font-family: "Anton", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #fffffe;
   padding: 15px 50px;
@@ -190,7 +177,7 @@ nav a:hover {
 }
 .button-container {
   margin: 0 auto;
-  width: 300px;
+  width: 250px;
 }
 
 .img-container-1 {
@@ -207,13 +194,12 @@ nav a:hover {
   display: flex;
   width: calc(100% - 15px);
   height: auto;
-  padding: 15px 7.5px 0 0;
 }
 .about-image3 {
   display: flex;
   width: calc(100% - 15px);
   height: auto;
-  padding: 15px 0 0 15px;
+  margin-left: 15px;
 }
 
 .two-image-container {
@@ -226,59 +212,94 @@ nav a:hover {
 
 /* Footer styles -------------------*/
 footer {
-  background-color: #000000;
+  margin-top: 100px;
 }
 
-.fa-youtube {
+.social-media-container {
+  background-color: #d9d9d9;
+  margin-top: 30px;
+  padding: 3rem 1rem;
+}
+
+footer p {
+  color: #303336;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fa-youtube,
+.fa-spotify,
+.fa-facebook,
+.fa-twitter {
   font-size: 3rem;
+  color: #303336;
+}
+.fa-spotify:hover {
+  color: #1db954;
+}
+.fa-youtube:hover {
   color: #ff0000;
 }
-.fa-spotify {
-  font-size: 3rem;
-  color: #1db954;
+.fa-facebook:hover {
+  color: #4267b2;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+.footer-logo-container {
+  margin: 0 auto;
+  width: 150px;
+}
+.footer-logo {
+  width: 150px;
+}
+.dark-grey-footer-div {
+  height: 30px;
+  width: 100%;
+  background-color: #303336;
 }
 
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
-  .light-grey-background-div {
-    height: 560px;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 250px;
-    z-index: -1;
+  .cta-button {
+    width: 300px;
+    font-size: 1.5rem;
+  }
+
+  .button-container {
+    width: 300px;
   }
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
   h1 {
-    font-size: 4rem;
-    padding: 0 50px;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 3rem;
-    padding: 0 50px;
+    font-size: 2.5rem;
   }
+  /*homepage h3*/
   h3 {
     font-size: 2rem;
+    margin-top: 0;
   }
-  h4 {
-    font-size: 1.5rem;
-    padding: 0 50px;
+  /*Rest h3*/
+  .version2 {
+    font-size: 1.8rem;
   }
+
   p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-
-  .light-grey-background-div {
-    height: 560px;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 340px;
-    z-index: -1;
-  }
-
   .logo-container,
   .header-logo {
     width: 150px;
@@ -311,29 +332,14 @@ footer {
   .button-container {
     width: 500px;
   }
+  .icon-container {
+    width: 50%;
+  }
 }
 /* Extra Large Screens-------------*/
 @media only screen and (min-width: 1281px) {
   body {
     margin: 0 20%;
-  }
-
-  .light-grey-background-div {
-    height: 560px;
-    width: 60%;
-    position: absolute;
-    left: 20%;
-    top: 340px;
-    z-index: -1;
-  }
-
-  .yellow-background-div {
-    height: 500px;
-    width: 60%;
-    position: absolute;
-    left: 20%;
-    top: 1400px;
-    z-index: -1;
   }
   .sticky {
     width: 60%;
