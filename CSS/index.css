@@ -110,7 +110,8 @@ main a {
   padding: 15px;
 }
 
-.title-container:hover {
+.title-container:hover,
+.most-viewed-title-container:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
