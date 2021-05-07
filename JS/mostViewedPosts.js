@@ -86,7 +86,7 @@ async function getMostViewedPostDetails(postIds) {
     
             const result = await response.json();
 
-            console.log(result);
+            // console.log(result);
 
             html.innerHTML += `<div class="post-container">
                                             <a href="post.html?id=${result.id}" alt="Link to ${result.acf.post_title} post" class="post-link">

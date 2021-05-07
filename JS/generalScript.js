@@ -17,13 +17,17 @@ function stickyNav() {
 }
 
 
-// Search bar
+// Search bar display
 const searchIcon = document.querySelector(".fa-search");
 const searchLabel = document.querySelector(".search-label");
 const searchBar = document.querySelector("input[type='text']");
-
+const searchButton = document.querySelector(".search-button");
+const searchInput = document.querySelector(".search.input");
+const searchResultContainer = document.querySelector(".search-results-container")
 
 searchIcon.onclick = function(){
   searchLabel.classList.toggle("visible");
   searchBar.classList.toggle("visible");
-}
+  searchButton.classList.toggle("visible");
+};
+
