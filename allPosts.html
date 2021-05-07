@@ -46,15 +46,16 @@
                 <h1>All posts</h1>
                 <div class="view-icon-container">
                     <div id="viewButtonContainer">
-                        <button class="viewButton active" onclick="listView()"><i class="fas fa-th-list"></i></button> 
-                        <button class="viewButton" onclick="gridView()"><i class="fa fa-th-large"></i></button>
+                        <button class="listButton" onclick="listView()"><i class="fas fa-th-list"></i></button> 
+                        <button class="gridButton active" onclick="gridView()"><i class="fa fa-th-large"></i></button>
                     </div>
                 </div>
             </section>
             <section class="home-section container">
                 <div class="light-grey-background-div"></div>
                 <div class="yellow-background-div"></div>
-                <div class="allPosts"></div>
+                <div class="listPosts"></div>
+                <div class="gridPosts"></div>
             </section>
             <section class="home-section">
                 <div class="button-container">
@@ -64,6 +65,7 @@
 
             <script src="js/generalScript.js"></script>
             <script src="js/getAllPosts.js"></script>
+            <script src="js/postViewMode.js"></script>
             
         </main>
         

@@ -42,6 +42,12 @@
   max-width: 100%;
   height: auto;
 }
+.image-1:hover,
+.image-2:hover,
+.image-3:hover {
+  filter: brightness(60%);
+  transition: all 1s;
+}
 .post-image-container-2 {
   display: block;
   margin: 0 auto;
@@ -62,7 +68,22 @@
   content: close-quote;
   font-size: 1.2rem;
 }
-
+.post-views {
+  font-size: 1.2rem;
+  padding: 0 15px;
+  font-family: "Anton", sans-serif;
+  color: #303336;
+  margin: 0;
+  text-align: right;
+}
+.author-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
 /* Image modal Styling
 -------------*/
 .image-pop-up {
@@ -74,7 +95,7 @@
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem;
   background: rgba(0, 0, 0, 0.9);
   transition: all 0.35s ease-in;
   z-index: 20;
@@ -92,12 +113,14 @@
   overflow: hidden;
   margin: 0 auto;
 }
-
-.modal-img {
+.image-frame {
+  background-color: #fffffe;
+  padding: 15px;
+}
+.modal-image {
   margin: 0 auto;
   max-width: 100%;
-  height: auto;
-  max-height: 85vh;
+  max-height: 80vh;
 }
 
 .close {

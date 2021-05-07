@@ -2,7 +2,8 @@ const url = "https://charlottelucas.no/wp-json/wp/v2/posts";
 count = 1;
 totalPages = 0;
 
-const allPostsContainer = document.querySelector(".allPosts");
+const listPostsContainer = document.querySelector(".listPosts");
+const gridPostsContainer = document.querySelector(".gridPosts");
 const button = document.querySelector(".cta-button");
 
 async function getPosts() {
@@ -45,14 +46,26 @@ function createHTML(result) {
 
         console.log(result[i]);
 
-        allPostsContainer.innerHTML += `<div class="post-container">
+        listPostsContainer.innerHTML += `<div class="list-post-container">
                                             <a href="post.html?id=${result[i].id}" alt="Link to ${posts.post_title} post" class="post-link">
-                                                <div class="post-image-container" style="background-image: url(${posts.image1})">
-                                                    <div class="title-container">
+                                                <div class="flex-container">
+                                                    <div class="list-image-container" style="background-image: url(${posts.image1})"></div>
+                                                    <div class="info-container">
+                                                        <h3 class="list-title">${posts.post_title}</h3>
+                                                        <p class="p2 list-excerpt">${posts.excerpt}</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>`
+
+        gridPostsContainer.innerHTML += `<div class="grid-post-container">
+                                            <a href="post.html?id=${result[i].id}" alt="Link to ${posts.post_title} post" class="post-link">
+                                                <div class="grid-image-container" style="background-image: url(${posts.image1})">
+                                                    <div class="grid-title-container">
                                                         <h3>${posts.post_title}</h3>
                                                     </div>
                                                 </div>
-                                                <div class="excerpt-container">
+                                                <div class="most-viewed-excerpt-container">
                                                     <p class="p2">${posts.excerpt}</p>
                                                 </div>
                                             </a>

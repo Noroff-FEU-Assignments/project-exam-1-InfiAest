@@ -31,17 +31,26 @@ async function getPostDetails() {
 
 getPostDetails();
 
-function createPostDetails(details) {
-    
-    const postDetails = details.acf;
 
-    console.log(postDetails);
+
+function createPostDetails(details) {
+
+    const formatedDate = new Date(details.date).toLocaleString("en-GB", {
+        day: "numeric",
+        month: "numeric",
+        year: "numeric",
+    });
+    const postViewsCount = details.content.rendered;
+    const postDetails = details.acf;
+    
 
     pageTitle.innerHTML += ` | ${postDetails.post_title}`
 
     postHeaders.innerHTML += `<h1>${postDetails.post_title}</h1>
-                                    <h2>Written by: ${postDetails.author}</h2>
-                                    <h3 class="version2">Date: ${details.date}</h3>`
+                              <div class="author-container">
+                                <h2 class="version2">${postDetails.author}, ${formatedDate}</h2>
+                                ${postViewsCount}
+                              </div>`
     
     postImage1.src = `${postDetails.image1}`
 
