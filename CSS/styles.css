@@ -163,12 +163,14 @@ nav {
   height: 100%;
   border-radius: 0;
   border: 0;
+  border-left: solid 2px black;
   font-family: "Anton", sans-serif;
   font-size: 1.2rem;
-  color: #fffffe;
-  background-color: #000000;
+  color: #000000;
+  background-color: #fffffe;
 }
 .search-button:hover {
+  color: #fffffe;
   background-color: #ff0000;
 }
 .search-button.visible {
