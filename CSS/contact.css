@@ -23,8 +23,8 @@ input {
 .error-message {
   color: #ff0000;
   font-size: 1.2rem;
-  padding-left: 15px;
   margin-top: 2px;
+  padding: 2px 15px 0 15px;
 }
 
 textarea {
@@ -35,9 +35,97 @@ textarea {
   padding: 10px;
 }
 
-.validation-message {
+.validation-modal {
   display: none;
-  color: green;
+}
+.validation-pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all 0.35s ease-in;
+  z-index: 20;
+}
+.modal-header {
+  display: block;
+  height: 50px;
+}
+
+.modal-content {
+  position: relative;
+  max-width: max-content;
+  max-height: max-content;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.modal-frame {
+  background-color: #fffffe;
+  padding: 15px;
+}
+
+.close {
+  color: #fffffe;
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.validation-message {
+  font-size: 2rem;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+}
+.forgot-p {
+  padding: 15px 0;
+  margin: 0;
+  text-align: center;
+}
+.modal-image {
+  margin: 0 auto;
+  max-width: 500px;
+  height: 200px;
+}
+.validation-image {
+  max-width: 500px;
+  height: 200px;
+}
+
+.modal-button {
+  background-color: #ff0000;
+  border: none;
+  width: 200px;
+  margin: 5px 15px;
+  font-family: "Anton", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fffffe;
+  padding: 15px 25px;
+  align-self: center;
+}
+.modal-button:hover {
+  background-color: #7a0000;
+}
+.modal-button-container {
+  margin: 0 auto;
+  max-width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .contact-info {
@@ -48,6 +136,15 @@ textarea {
   padding-bottom: 20px;
 }
 
+/* Tablet and smaller screen sizes-------------*/
+@media (min-width: 641px) {
+  .modal-image {
+    height: auto;
+  }
+  .validation-image {
+    height: auto;
+  }
+}
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
   input,

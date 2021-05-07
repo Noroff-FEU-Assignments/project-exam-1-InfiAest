@@ -4,6 +4,17 @@
         <title>Contact Live.Rock</title>
         <meta name="description" content="Contact Live.Rock here">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Hotjar Tracking Code for https://live-rock-blog.netlify.app/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2389936,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Metal+Mania&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
@@ -44,7 +55,27 @@
                 <p class="contact-info p2">If you would like to contact us please send a message using the form below and we will be in touch as soon as possible. Please allow us 3-4 working days to repond, we are working as fast as we can.</p>
                 <p class="contact-info">We look forward to hearing from you!</p>
             </div>
-            <p class="validation-message">Congrats! You filled out the form correctly</p>
+            
+            <div id="validation-modal" class="validation-pop-up">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <span class="close">&times;</span>
+                    </header>
+                    <div class="modal-frame">
+                        <div class="modal-content">
+                            <div class="modal-image">
+                                <img class="validation-image" src="images/foo-fighters-3.jpg" alt="">
+                            </div>
+                            <h1 class="validation-message">Congrats! Your message has been sent!</h1>
+                            <p class="forgot-p">If you forgot something, send another. Otherwise keep on rocking!</p>
+                        </div>
+                        <div class="modal-button-container">
+                            <button class="modal-button new-message-button">Send new message</button>
+                            <button class="modal-button home-button">Back to home</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <form id="contactForm">
                 <div>
                     <label class="form-labels">

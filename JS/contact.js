@@ -7,7 +7,7 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
-const validationMessage = document.querySelector(".validation-message");
+const validationModal = document.querySelector("#validation-modal");
 
 function validateForm(event) {
     event.preventDefault();
@@ -43,12 +43,31 @@ function validateForm(event) {
     }
 
     if (formIsValid === true) {
-        validationMessage.style.display = "block";
+        validationModal.style.display = "block";
         console.log("Congrats! You filled out the form correctly");
     } 
 
 }
 
+const span = document.getElementsByClassName("close")[0];
+const homeButton = document.querySelector(".home-button");
+const newMessageButton = document.querySelector(".new-message-button");
+
+
+/* Close button --------*/
+span.onclick = function() { 
+  validationModal.style.display = "none";
+  window.location = "contact.html";
+}
+/* Home button --------*/
+homeButton.onclick = function() { 
+    window.location = "index.html";
+  }
+/* New Message button --------*/
+newMessageButton.onclick = function() { 
+    validationModal.style.display = "none";
+    window.location = "contact.html";
+  }
 
 form.addEventListener("submit", validateForm);
 
