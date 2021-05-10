@@ -18,12 +18,12 @@
 }
 .yellow-background-div {
   background-color: #ffff00;
-  height: 800px;
+  height: 500px;
   position: absolute;
   width: 100%;
   padding: 15px;
   right: -15px;
-  top: 3000px;
+  top: 2500px;
   z-index: -1;
 }
 
