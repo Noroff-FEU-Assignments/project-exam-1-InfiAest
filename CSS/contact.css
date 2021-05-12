@@ -1,3 +1,13 @@
+/*Colours ----------------*/
+:root {
+  --black: #000000;
+  --white: #fff4f4;
+  --grey: #232323;
+  --pink: #e02c4e;
+  --lightgold: #9a7c44;
+  --darkgold: #604800;
+}
+
 .contact-form {
   max-width: 760px;
   margin: 0 auto;
@@ -8,7 +18,11 @@ input {
   margin: 0 15px;
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #d9d9d9;
+  border: 2px solid var(--lightgold);
+}
+input:focus {
+  outline: none !important;
+  border: 2px solid var(--darkgold);
 }
 
 .form-labels {
@@ -21,7 +35,7 @@ input {
 }
 
 .error-message {
-  color: #ff0000;
+  color: var(--pink);
   font-size: 1.2rem;
   margin-top: 2px;
   padding: 2px 15px 0 15px;
@@ -31,8 +45,12 @@ textarea {
   height: 200px;
   width: 85%;
   margin: 0 15px;
-  border: 2px solid #d9d9d9;
+  border: 2px solid var(--lightgold);
   padding: 10px;
+}
+textarea:focus {
+  outline: none !important;
+  border: 2px solid var(--darkgold);
 }
 
 .validation-modal {
@@ -65,12 +83,12 @@ textarea {
   margin: 0 auto;
 }
 .modal-frame {
-  background-color: #fffffe;
+  background-color: var(--white);
   padding: 15px;
 }
 
 .close {
-  color: #fffffe;
+  color: var(--white);
   float: right;
   font-size: 3rem;
   font-weight: bold;
@@ -78,7 +96,7 @@ textarea {
 
 .close:hover,
 .close:focus {
-  color: #ff0000;
+  color: var(--darkgold);
   text-decoration: none;
   cursor: pointer;
 }
@@ -88,11 +106,14 @@ textarea {
   text-align: center;
   padding: 15px 0;
   margin: 0;
+  color: var(--grey);
 }
 .forgot-p {
   padding: 15px 0;
   margin: 0;
   text-align: center;
+  color: var(--darkgold);
+  font-weight: 500;
 }
 .modal-image {
   margin: 0 auto;
@@ -105,19 +126,22 @@ textarea {
 }
 
 .modal-button {
-  background-color: #ff0000;
+  background-color: var(--pink);
   border: none;
+  border-radius: 25px;
   width: 200px;
   margin: 5px 15px;
-  font-family: "Anton", sans-serif;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #fffffe;
-  padding: 15px 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: var(--white);
+  padding: 15px;
   align-self: center;
+  transition: all 0.3s ease 0s;
 }
 .modal-button:hover {
-  background-color: #7a0000;
+  background-color: #be0036;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 .modal-button-container {
   margin: 0 auto;
@@ -126,10 +150,6 @@ textarea {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-}
-
-.contact-info {
-  padding: 15px;
 }
 
 .info-container {

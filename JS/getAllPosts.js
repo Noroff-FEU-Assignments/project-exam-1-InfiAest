@@ -62,7 +62,7 @@ function createHTML(result) {
                                             <a href="post.html?id=${result[i].id}" alt="Link to ${posts.post_title} post" class="post-link">
                                                 <div class="grid-image-container" style="background-image: url(${posts.image1})">
                                                     <div class="grid-title-container">
-                                                        <h3>${posts.post_title}</h3>
+                                                        <h3 class="grid-title">${posts.post_title}</h3>
                                                     </div>
                                                 </div>
                                                 <div class="most-viewed-excerpt-container">

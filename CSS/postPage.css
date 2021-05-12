@@ -1,46 +1,29 @@
-.container {
-  position: relative;
+/*Colours ----------------*/
+:root {
+  --black: #000000;
+  --white: #fff4f4;
+  --grey: #232323;
+  --pink: #e02c4e;
+  --lightgold: #9a7c44;
+  --darkgold: #604800;
 }
+
 .post-image1,
 .post-paragraph1,
 .post-image2,
 .post-image3,
 .post-paragraph2 {
   position: relative;
-}
-.light-grey-background-div {
-  background-color: #d9d9d9;
-  height: calc(100% - 275px);
-  position: absolute;
-  width: 100%;
-  padding: 15px;
-  right: -15px;
-  top: 100px;
-  z-index: -1;
-}
-.yellow-background-div {
-  background-color: #ffff00;
-  height: calc(100% - 115px);
-  position: absolute;
-  width: 100%;
-  padding: 15px;
-  right: -15px;
-  top: 100px;
-  z-index: -1;
+  margin: 50px 0;
 }
 
-.post-image-container-1 {
-  display: block;
-  margin: 0 auto;
-  width: calc(100% - 30px);
-  height: min-content;
-}
 .image-1,
 .image-2,
 .image-3 {
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  border: 5px solid var(--white);
 }
 .image-1:hover,
 .image-2:hover,
@@ -51,28 +34,32 @@
 .post-image-container-2 {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: calc(60% - 30px);
   height: min-content;
 }
 
 .latest-quote {
-  color: #303336;
+  color: var(--lightgold);
+  font-family: novecento-slab-condensed, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.5rem;
   padding: 0 30px;
   margin: 50px 0;
 }
 .latest-quote::before {
   content: open-quote;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
 }
 .latest-quote::after {
   content: close-quote;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
 }
 .post-views {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 0 15px;
-  font-family: "Anton", sans-serif;
-  color: #303336;
+  font-family: novecento-slab, serif;
+  color: white;
   margin: 0;
   text-align: right;
 }
@@ -113,9 +100,9 @@
   overflow: hidden;
   margin: 0 auto;
 }
-.image-frame {
-  background-color: #fffffe;
-  padding: 15px;
+.image-frame-modal {
+  background-color: var(--white);
+  padding: 5px;
 }
 .modal-image {
   margin: 0 auto;
@@ -124,7 +111,7 @@
 }
 
 .close {
-  color: #fffffe;
+  color: var(--lightgold);
   float: right;
   font-size: 3rem;
   font-weight: bold;
@@ -132,7 +119,7 @@
 
 .close:hover,
 .close:focus {
-  color: #ff0000;
+  color: var(--darkgold);
   text-decoration: none;
   cursor: pointer;
 }
@@ -143,26 +130,6 @@
 
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
-  .light-grey-background-div {
-    background-color: #d9d9d9;
-    height: calc(100% - 875px);
-    position: absolute;
-    width: 100%;
-    padding: 15px;
-    right: -15px;
-    top: 250px;
-    z-index: -1;
-  }
-  .yellow-background-div {
-    background-color: #ffff00;
-    height: calc(100% - 275px);
-    position: absolute;
-    width: 100%;
-    padding: 15px;
-    right: -15px;
-    top: 250px;
-    z-index: -1;
-  }
   .latest-quote::before,
   .latest-quote::after {
     font-size: 1.8rem;

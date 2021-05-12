@@ -92,7 +92,7 @@ async function getMostViewedPostDetails(postIds) {
                                             <a href="post.html?id=${result.id}" alt="Link to ${result.acf.post_title} post" class="post-link">
                                                 <div class="most-viewed-post-image-container" style="background-image: url(${result.acf.image1})">
                                                     <div class="most-viewed-title-container">
-                                                        <h3>${result.acf.post_title}</h3>
+                                                        <h3 class="post-title">${result.acf.post_title}</h3>
                                                     </div>
                                                 </div>
                                                 <div class="most-viewed-excerpt-container">
@@ -113,3 +113,8 @@ async function getMostViewedPostDetails(postIds) {
 
 }
 
+/* See all posts button --------*/
+const allPostsButton = document.querySelector(".allPostsButton");
+allPostsButton.onclick = function() { 
+    window.location = "allPosts.html";
+  }
