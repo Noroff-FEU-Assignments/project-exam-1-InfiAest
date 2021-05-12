@@ -46,9 +46,13 @@ function createPostDetails(details) {
 
     pageTitle.innerHTML += ` | ${postDetails.post_title}`
 
-    postHeaders.innerHTML += `<h1 class="postH1">${postDetails.post_title}</h1>
+    postHeaders.innerHTML += `<div class="grunge-container">
+                                 <h1 class="postH1 text-mask-white">${postDetails.post_title}</h1>
+                              </div>
                               <div class="author-container">
-                                <h2 class="postH2">${postDetails.author}, ${formatedDate}</h2>
+                                <div class="grunge-container">
+                                    <h2 class="postH2 text-mask-gold">${postDetails.author}, ${formatedDate}</h2>   
+                                </div>
                                 ${postViewsCount}
                               </div>`
     

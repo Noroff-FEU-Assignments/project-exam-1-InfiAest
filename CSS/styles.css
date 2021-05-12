@@ -74,19 +74,24 @@ main {
   margin: 0 15px;
 }
 
-.headingContainer {
-  position: relative;
-}
-.grunge,
-.grunge-overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
+/*grunge text styling-----------*/
+.grunge-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
 }
 
-.grunge-overlay {
-  width: 100%;
-  height: auto;
+.text-mask-white {
+  background: url(/images/grunge-text-overlay.jpg) no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.text-mask-gold {
+  background: url(/images/grunge-text-gold.jpg) no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /*Loader style ----------*/
