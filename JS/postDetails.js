@@ -1,3 +1,4 @@
+// calling the api
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -31,7 +32,18 @@ async function getPostDetails() {
 
 getPostDetails();
 
+// loading screen
 
+const loadingAnimation = document.querySelector(".loader-overlay");
+
+window.onload = function() {
+  window.setInterval(function(){
+    loadingAnimation.style.display = "none";
+  }, 1500);
+}
+
+
+//Adding the details to the html
 
 function createPostDetails(details) {
 

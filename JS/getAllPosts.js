@@ -1,3 +1,5 @@
+//calling the api
+
 const url = "https://charlottelucas.no/wp-json/wp/v2/posts";
 count = 1;
 totalPages = 0;
@@ -32,11 +34,26 @@ async function getPosts() {
     catch(error) {
 
         console.log(error);
+        // listPostsContainer.innerHTML = displayError("An error occured");
+        // gridPostsContainer.innerHTML = displayError("An error occured");
 
     }
 }
 
 getPosts();
+
+
+// loading screen
+
+const loadingAnimation = document.querySelector(".loader-overlay");
+
+window.onload = function() {
+  window.setInterval(function(){
+    loadingAnimation.style.display = "none";
+  }, 1500);
+}
+
+//loading in the posts
 
 function createHTML(result) {
 
@@ -44,7 +61,7 @@ function createHTML(result) {
 
         const posts = result[i].acf;
 
-        console.log(result[i]);
+        // console.log(result[i]);
 
         listPostsContainer.innerHTML += `<div class="list-post-container">
                                             <a href="post.html?id=${result[i].id}" alt="Link to ${posts.post_title} post" class="post-link">

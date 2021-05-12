@@ -30,6 +30,16 @@ async function getLatestPosts() {
 
 getLatestPosts();
 
+// loading screen
+
+const loadingAnimation = document.querySelector(".loader-overlay");
+
+window.onload = function() {
+  window.setInterval(function(){
+    loadingAnimation.style.display = "none";
+  }, 1500);
+}
+
 
 function createLatestPosts(result) {
 

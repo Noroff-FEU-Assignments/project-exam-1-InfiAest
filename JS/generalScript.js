@@ -34,13 +34,3 @@ searchIcon.onclick = function(){
   searchBar.classList.toggle("visible");
   searchButton.classList.toggle("visible");
 };
-
-// loading screen
-
-const loadingAnimation = document.querySelector(".loader-overlay");
-
-window.onload = function() {
-  window.setInterval(function(){
-    loadingAnimation.style.display = "none";
-  }, 1500);
-}
