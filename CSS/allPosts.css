@@ -79,7 +79,7 @@ a {
   margin: 0 auto;
   height: 240px;
   padding: 15px 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   transition: all 0.3s ease 0s;
 }
 .list-post-container:hover {
@@ -108,6 +108,7 @@ a {
 .list-title {
   color: var(--grey);
   margin-top: 0;
+  font-size: 1.3rem;
 }
 .list-title:hover {
   color: var(--lightgold);
@@ -176,6 +177,9 @@ a {
   .gridButton {
     font-size: 1.5rem;
   }
+  .list-title {
+    font-size: 1.5rem;
+  }
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
@@ -185,6 +189,9 @@ a {
   }
   .post-container {
     margin: 0 auto;
+  }
+  .list-title {
+    font-size: 1.8rem;
   }
 }
 /* Extra Large Screens-------------*/

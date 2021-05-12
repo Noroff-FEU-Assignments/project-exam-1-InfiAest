@@ -19,6 +19,8 @@ input {
   padding: 10px;
   font-size: 16px;
   border: 2px solid var(--lightgold);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
 }
 input:focus {
   outline: none !important;
@@ -47,6 +49,8 @@ textarea {
   margin: 0 15px;
   border: 2px solid var(--lightgold);
   padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
 }
 textarea:focus {
   outline: none !important;

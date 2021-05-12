@@ -11,7 +11,7 @@
 /*General styles ----------------*/
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   padding: 0 15px;
   color: var(--white);
   margin-bottom: 30px;
@@ -53,7 +53,7 @@ p {
 }
 .p2 {
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 1.8rem;
   color: var(--black);
   padding: 20px 50px;
 }
@@ -87,6 +87,51 @@ main {
 .grunge-overlay {
   width: 100%;
   height: auto;
+}
+
+/*Loader style ----------*/
+
+.loader-container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
+  max-height: max-content;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.loader-logo {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 353px;
+  background-image: url("/images/Logo\ loader.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.circle {
+  position: absolute;
+  top: 165px;
+  left: 310px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e02c4e;
+  box-shadow: 0px 0px 1px 1px #e02c4e;
+}
+
+.pulse {
+  animation: pulse-animation 1.2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(224, 44, 78, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(224, 44, 78, 0);
+  }
 }
 
 /* Header image styling ---------- */
