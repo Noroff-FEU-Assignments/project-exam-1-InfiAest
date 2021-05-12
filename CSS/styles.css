@@ -52,13 +52,13 @@ p {
   color: var(--white);
 }
 .p2 {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.8rem;
   color: var(--black);
   padding: 20px 50px;
 }
 .post2 {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 2rem;
   color: var(--white);
 }
