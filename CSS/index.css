@@ -95,8 +95,8 @@ main a {
 
 .title-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  width: calc(100% - 30px);
-  height: calc(100% - 30px);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
   margin: 0 auto;
   padding: 10px;
   display: flex;

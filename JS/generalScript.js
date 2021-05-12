@@ -3,6 +3,8 @@ window.onscroll = function() {stickyNav()};
 
 // Get the navbar
 var navbar = document.querySelector("#wrapper");
+// get the nav logo
+const navLogo = document.querySelector(".nav-logo");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -11,8 +13,10 @@ var sticky = navbar.offsetTop;
 function stickyNav() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
+    navLogo.style.display = "block";
   } else {
     navbar.classList.remove("sticky");
+    navLogo.style.display = "none";
   }
 }
 
@@ -31,3 +35,12 @@ searchIcon.onclick = function(){
   searchButton.classList.toggle("visible");
 };
 
+// loading screen
+
+const loadingAnimation = document.querySelector(".loader-overlay");
+
+window.onload = function() {
+  window.setInterval(function(){
+    loadingAnimation.style.display = "none";
+  }, 1500);
+}

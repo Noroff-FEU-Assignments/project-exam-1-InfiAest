@@ -90,11 +90,20 @@ main {
 }
 
 /*Loader style ----------*/
-
-.loader-container {
-  position: relative;
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
+  background: var(--grey);
+  z-index: 20;
+}
+.loader {
+  position: relative;
   max-width: max-content;
   max-height: max-content;
   overflow: hidden;
@@ -104,25 +113,27 @@ main {
   position: relative;
   display: block;
   margin: 0 auto;
-  width: 500px;
-  height: 353px;
+  width: 250px;
+  height: 153px;
+  margin-top: 30vh;
   background-image: url("/images/Logo\ loader.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .circle {
   position: absolute;
-  top: 165px;
-  left: 310px;
-  width: 20px;
-  height: 20px;
+  top: 72px;
+  left: 135px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
+  margin-top: 30vh;
   background: #e02c4e;
   box-shadow: 0px 0px 1px 1px #e02c4e;
 }
 
 .pulse {
-  animation: pulse-animation 1.2s infinite;
+  animation: pulse-animation 1s infinite;
 }
 
 @keyframes pulse-animation {
@@ -160,7 +171,7 @@ nav {
 }
 .hamburger-label {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 35px;
   height: 100%;
@@ -399,6 +410,16 @@ footer p {
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
+  .loader-logo {
+    width: 450px;
+    height: 250px;
+  }
+  .circle {
+    top: 112px;
+    left: 220px;
+    width: 20px;
+    height: 20px;
+  }
   nav,
   .search-box {
     display: block;
@@ -443,9 +464,6 @@ footer p {
   }
   .hamburger-label {
     display: none;
-  }
-  .nav-logo {
-    display: block;
   }
   .cta-button {
     width: 350px;
