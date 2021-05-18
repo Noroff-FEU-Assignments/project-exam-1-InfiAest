@@ -8,6 +8,7 @@ const listPostsContainer = document.querySelector(".listPosts");
 const gridPostsContainer = document.querySelector(".gridPosts");
 const button = document.querySelector(".cta-button");
 
+
 async function getPosts() {
 
     try {
@@ -33,9 +34,30 @@ async function getPosts() {
 
     catch(error) {
 
+        const container = document.querySelector(".blog-posts");
+
+        container.innerHTML = `<div class="error-message">
+                                    <div class="grunge-container">
+                                        <h1 class="text-mask-white error-heading">Oops! Something is broken</h1>
+                                    </div>
+                                    <div class="error-img-container">
+                                        <img class="error-img" src="/images/error-img.jpg" alt="tattered and broken old guitar amp">
+                                    </div>
+                                    <div class="grunge-container">
+                                        <h2 class="text-mask-gold error-subheading">Even legends have technical difficulties!</h2>
+                                    </div>
+                                    <p class="error-text">"Mama, oooh,</p>
+                                    <p class="error-text">Didn't mean to make you cry,</p>
+                                    <p class="error-text bold">If I'm not back again this time tomorrow,</p>
+                                    <p class="error-text">Carry on, carry on as if nothing really matters"</p>
+                                    <br>
+                                    <p class="error-link">Or you know... You could send us a message</p>
+                                    <div class="button-container">
+                                        <a href="contact.html" class="error-button">Send us a message</a>
+                                    </div>
+                                </div>`;
+
         console.log(error);
-        // listPostsContainer.innerHTML = displayError("An error occured");
-        // gridPostsContainer.innerHTML = displayError("An error occured");
 
     }
 }

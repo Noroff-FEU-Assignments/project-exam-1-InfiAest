@@ -96,7 +96,7 @@ main {
   color: transparent;
 }
 
-/*Loader and error style ----------*/
+/*Loader style ----------*/
 .loader-overlay {
   position: fixed;
   top: 0;
@@ -151,13 +151,55 @@ main {
     box-shadow: 0 0 0 15px rgba(224, 44, 78, 0);
   }
 }
-/* .error {
-  border: 1px solid darkred;
-  padding: 1rem;
-  color: darkred;
-  background: rgba(255, 0, 0, 0.1);
-} */
 
+/*Error styling ------------*/
+.error-message {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.error-img-container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.error-img {
+  width: 100%;
+  height: auto;
+}
+.error-heading {
+  font-size: 2.5rem;
+}
+.error-subheading {
+  font-size: 1.8rem;
+}
+.error-text {
+  margin: 0;
+  padding: 0 15px;
+}
+.error-link {
+  margin: 0;
+  padding: 15px 15px 50px 15px;
+}
+.bold {
+  font-weight: bold;
+}
+.error-button {
+  background-color: var(--pink);
+  border: none;
+  border-radius: 25px;
+  width: 250px;
+  margin: 50px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  padding: 15px 30px;
+  transition: all 0.3s ease 0s;
+}
+.error-button:hover {
+  background-color: #be0036;
+  transform: scale(1.05);
+  cursor: pointer;
+}
 /* Header image styling ---------- */
 
 .header-logo-container {
@@ -253,7 +295,9 @@ nav a:hover {
 }
 
 /*SEARCH BOX ---------*/
-
+.search-input:focus {
+  outline: none !important;
+}
 .search-box {
   position: relative;
   display: none;
@@ -535,7 +579,8 @@ footer p {
   .hamburger-label {
     display: none;
   }
-  .cta-button {
+  .cta-button,
+  .error-button {
     width: 350px;
   }
   .button-container {

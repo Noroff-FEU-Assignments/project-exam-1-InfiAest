@@ -60,26 +60,28 @@
         </header>
         <main>
             <div class="page-content">
-                <div class="title-view-container">
-                    <div class="grunge-container">
-                        <h1 class="text-mask-white">All posts</h1>
-                    </div>
-                    <div class="view-icon-container">
-                        <div id="viewButtonContainer">
-                            <button class="listButton" onclick="listView()"><i class="fas fa-th-list"></i></button> 
-                            <button class="gridButton active" onclick="gridView()"><i class="fa fa-th-large"></i></button>
+                <section class="blog-posts">
+                    <div class="title-view-container">
+                        <div class="grunge-container">
+                            <h1 class="text-mask-white">All posts</h1>
+                        </div>
+                        <div class="view-icon-container">
+                            <div id="viewButtonContainer">
+                                <button class="listButton" onclick="listView()"><i class="fas fa-th-list"></i></button> 
+                                <button class="gridButton active" onclick="gridView()"><i class="fa fa-th-large"></i></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="container">
-                    <div class="listPosts"></div>
-                    <div class="gridPosts"></div>
-                </div>
-                <div class="home-section">
-                    <div class="button-container">
-                        <button class="cta-button" onclick="getPosts()">Load more posts</button>
+                    <div class="container">
+                        <div class="listPosts"></div>
+                        <div class="gridPosts"></div>
                     </div>
-                </div>
+                    <div>
+                        <div class="button-container">
+                            <button class="cta-button" onclick="getPosts()">Load more posts</button>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div class="search-results"></div>
