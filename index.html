@@ -47,79 +47,78 @@
                         </ul>
                     </nav>
                     <div class="search-box">
-                        <div class="search-bar">
-                            <input type="text" placeholder="Search..." name="Search">
-                            <button class="search-button">Search</button>
-                        </div>
-                        <div class="search-label"><i class="fas fa-search"></i></div>
+                        <form class="search-form">
+                            <div class="search-bar">
+                                <input class="search-input" type="text" placeholder="foo fighters" name="Search">
+                                <button class="search-button">Search</button>
+                            </div>
+                            <div class="search-label"><i class="fas fa-search"></i></div>
+                        </form>
                     </div> 
                 </div>
             </div>
         </header>
         <main>
-            <div class="latestPosts">
-                <div class="grunge-container">
-                    <h1 class="text-mask-white">What's new?</h1>
-                </div>
-                
-                
-                <div class="container">
+            <div class="page-content">
+                <div class="latestPosts">
+                    <div class="grunge-container">
+                        <h1 class="text-mask-white">What's new?</h1>
+                    </div>
                     
-                    <div class="slideshow-container">
-                        <div class="latest-post-container">
+                    <div class="container">
+                        
+                        <div class="slideshow-container">
+                            <div class="latest-post-container">
 
-                            <div class="mySlides fade">
-                                <div class="latestPostsContainer1"></div>
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="latestPostsContainer2"></div>
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="latestPostsContainer3"></div>
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="latestPostsContainer4"></div>
-                            </div>
+                                <div class="mySlides fade">
+                                    <div class="latestPostsContainer1"></div>
+                                </div>
+                                <div class="mySlides fade">
+                                    <div class="latestPostsContainer2"></div>
+                                </div>
+                                <div class="mySlides fade">
+                                    <div class="latestPostsContainer3"></div>
+                                </div>
+                                <div class="mySlides fade">
+                                    <div class="latestPostsContainer4"></div>
+                                </div>
 
-                            <div class="arrow-container">
-                                <div>
-                                    <a class="prevArrow" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
-                                </div>
-                                <div>
-                                    <a class="nextArrow" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                                <div class="arrow-container">
+                                    <div>
+                                        <a class="prevArrow" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                                    </div>
+                                    <div>
+                                        <a class="nextArrow" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            
-                        </div>
-                            <br>
-                            
-                        <div class="dot-container">
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span> 
-                            <span class="dot" onclick="currentSlide(4)"></span> 
+                                <br>
+                                
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide(1)"></span> 
+                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                <span class="dot" onclick="currentSlide(3)"></span> 
+                                <span class="dot" onclick="currentSlide(4)"></span> 
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="most-viewed">
+                    <div class="grunge-container">
+                        <h2 class="text-mask-gold">Most viewed</h2>
+                    </div>
+                    
+                    <div class="mostViewedContainer">
+                        <div class="mostViewedPosts"></div>
+                    </div>
+
+                    <div class="button-container">
+                        <button onclick="seeAllPosts()" class="cta-button allPostsButton">View all posts</button>
+                    </div>
+                </div>
             </div>
-
-            <div class="dark-grey-background-div"></div>
-
-            <section class="home-section">
-                <div class="grunge-container">
-                    <h2 class="text-mask-gold">Most viewed</h2>
-                </div>
-                
-                <div class="mostViewedContainer">
-                    <div class="mostViewedPosts"></div>
-                </div>
-
-                <div class="button-container">
-                    <button onclick="seeAllPosts()" class="cta-button allPostsButton">View all posts</button>
-                </div>
-                
-            </section>
+            <div class="search-results"></div>
 
             <script src="js/generalScript.js"></script>
             <script src="js/latestPosts.js"></script>

@@ -41,75 +41,81 @@
                         </ul>
                     </nav>
                     <div class="search-box">
-                        <div class="search-bar">
-                            <input type="text" placeholder="Search..." name="Search">
-                            <button class="search-button">Search</button>
-                        </div>
-                        <div class="search-label"><i class="fas fa-search"></i></div>
+                        <form class="search-form">
+                            <div class="search-bar">
+                                <input class="search-input" type="text" placeholder="glass animals" name="Search">
+                                <button class="search-button">Search</button>
+                            </div>
+                            <div class="search-label"><i class="fas fa-search"></i></div>
+                        </form>
                     </div> 
                 </div>
             </div>
         </header>
         <main>
-            <div class="info-container">
-            <div class="grunge-container">
-                <h1 class="text-mask-white">Contact us</h1>
-            </div>
-                <p class="contact-info post2">If you would like to contact us please send a message using the form below and we will be in touch as soon as possible. Please allow us 3-4 working days to repond, we are working as fast as we can.</p>
-                <p class="contact-info">We look forward to hearing from you!</p>
-            </div>
-            
-            <div id="validation-modal" class="validation-pop-up">
-                <div class="modal-content">
-                    <header class="modal-header">
-                        <span class="close">&times;</span>
-                    </header>
-                    <div class="modal-frame">
-                        <div class="modal-content">
-                            <div class="modal-image">
-                                <img class="validation-image" src="images/foo-fighters-3.jpg" alt="">
+            <div class="page-content">
+                <div class="info-container">
+                <div class="grunge-container">
+                    <h1 class="text-mask-white">Contact us</h1>
+                </div>
+                    <p class="contact-info post2">If you would like to contact us please send a message using the form below and we will be in touch as soon as possible. Please allow us 3-4 working days to repond, we are working as fast as we can.</p>
+                    <p class="contact-info">We look forward to hearing from you!</p>
+                </div>
+                
+                <div id="validation-modal" class="validation-pop-up">
+                    <div class="modal-content">
+                        <header class="modal-header">
+                            <span class="close">&times;</span>
+                        </header>
+                        <div class="modal-frame">
+                            <div class="modal-content">
+                                <div class="modal-image">
+                                    <img class="validation-image" src="images/foo-fighters-3.jpg" alt="">
+                                </div>
+                                <h1 class="validation-message">Congrats! Your message has been sent!</h1>
+                                <p class="forgot-p">If you forgot something, send another. Otherwise keep on rocking!</p>
                             </div>
-                            <h1 class="validation-message">Congrats! Your message has been sent!</h1>
-                            <p class="forgot-p">If you forgot something, send another. Otherwise keep on rocking!</p>
-                        </div>
-                        <div class="modal-button-container">
-                            <button class="modal-button new-message-button">Send new message</button>
-                            <button class="modal-button home-button">Back to home</button>
+                            <div class="modal-button-container">
+                                <button class="modal-button new-message-button">Send new message</button>
+                                <button class="modal-button home-button">Back to home</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <form id="contactForm">
+                    <div>
+                        <label class="form-labels">
+                            <h2 class="form-labels">Name (minimum 5 characters)</h2>
+                            <input name="name" id="name" placeholder="Matt Woods">
+                        </label>
+                        <div class="form-error" id="nameError"><p class="error-message">Please enter at least 5 characters</p></div>
+                    </div>
+                    <div>
+                        <label class="form-labels">
+                            <h2 class="form-labels">Email (required)</h2>
+                            <input name="email" id="email" placeholder="mattwoods@mail.com">
+                        </label>
+                        <div class="form-error" id="emailError"><p class="error-message">Please enter a valid email address</p></div>
+                    </div>
+                    <div>
+                        <label class="form-labels">
+                            <h2 class="form-labels">Subject (minimum 15 characters)</h2>
+                            <input name="subject" id="subject" placeholder="When is the next AC/DC gig?">
+                        </label>
+                        <div class="form-error" id="subjectError"><p class="error-message">Subject must be at least 15 characters</p></div>
+                    </div>
+                    <div>
+                        <label for="subject" class="form-labels"><h2 class="form-labels">Message</h2></label>
+                            <textarea id="message" name="message" placeholder="Write something here.."></textarea>
+                    </div>
+                    <div class="form-error" id="messageError"><p class="error-message">Message should be more than 25 characters</p></div>
+                    <div class="button-container">
+                        <button class="cta-button">Send Message</button>
+                    </div>
+                </form>
             </div>
-            <form id="contactForm">
-                <div>
-                    <label class="form-labels">
-                        <h2 class="form-labels">Name (minimum 5 characters)</h2>
-                        <input name="name" id="name" placeholder="Matt Woods">
-                    </label>
-                    <div class="form-error" id="nameError"><p class="error-message">Please enter at least 5 characters</p></div>
-                </div>
-                <div>
-                    <label class="form-labels">
-                        <h2 class="form-labels">Email (required)</h2>
-                        <input name="email" id="email" placeholder="mattwoods@mail.com">
-                    </label>
-                    <div class="form-error" id="emailError"><p class="error-message">Please enter a valid email address</p></div>
-                </div>
-                <div>
-                    <label class="form-labels">
-                        <h2 class="form-labels">Subject (minimum 15 characters)</h2>
-                        <input name="subject" id="subject" placeholder="When is the next AC/DC gig?">
-                    </label>
-                    <div class="form-error" id="subjectError"><p class="error-message">Subject must be at least 15 characters</p></div>
-                </div>
-                <div>
-                    <label for="subject" class="form-labels"><h2 class="form-labels">Message</h2></label>
-                        <textarea id="message" name="message" placeholder="Write something here.."></textarea>
-                </div>
-                <div class="form-error" id="messageError"><p class="error-message">Message should be more than 25 characters</p></div>
-                <div class="button-container">
-                    <button class="cta-button">Send Message</button>
-                </div>
-            </form>
+
+            <div class="search-results"></div>
             
             <script src="js/contact.js"></script>
             <script src="js/generalScript.js"></script>
