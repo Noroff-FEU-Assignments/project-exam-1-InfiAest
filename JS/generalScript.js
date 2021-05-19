@@ -104,6 +104,7 @@ searchButton.onclick = async function getSearchResults() {
                                                   </a>
                                               </div>`
         }
+
       }
 
   }

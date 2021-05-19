@@ -12,7 +12,15 @@ const button = document.querySelector(".cta-button");
 async function getPosts() {
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(url).then(function(response)
+        { 
+        if (!response.ok) 
+        { 
+            throw new Error("HTTP error! status: ${response.status}"); 
+        }
+
+        return response;
+        });
 
         totalPages = response.headers.get('X-WP-TotalPages');
 
