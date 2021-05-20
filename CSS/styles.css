@@ -494,7 +494,7 @@ footer p {
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
   .cta-button {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   h1 {
     font-size: 6rem;
@@ -578,6 +578,9 @@ footer p {
   }
   .hamburger-label {
     display: none;
+  }
+  .cta-button {
+    font-size: 1.5rem;
   }
   .cta-button,
   .error-button {
