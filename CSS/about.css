@@ -26,11 +26,19 @@
   margin: 0 auto;
   width: 100%;
 }
+.signature-img {
+  max-width: 150px;
+  margin-top: -40px;
+  margin-left: 10%;
+}
 
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
   .two-image-container {
     width: 80%;
+  }
+  .signature-img {
+    margin-left: 20%;
   }
 }
 
