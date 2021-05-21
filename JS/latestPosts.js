@@ -138,7 +138,7 @@ function showSlides(x) {
     };
 
   if (x < 1) {
-      slideIndex = slides.length
+      slideIndex = slides.length;
     };
 
   for (var i = 0; i < slides.length; i++) {

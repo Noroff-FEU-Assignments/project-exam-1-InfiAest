@@ -37,6 +37,7 @@ async function getPosts() {
             button.style.backgroundColor = "#303336";
             button.style.transform = "none";
             button.innerHTML = "No more posts to show";
+            button.style.cursor = "default";
         }
 
     }
