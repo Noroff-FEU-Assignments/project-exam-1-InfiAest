@@ -8,16 +8,21 @@
   --darkgold: #604800;
 }
 
-/* Top posts section  -------------*/
-.container {
+/* General styling  -------------*/
+.allPostsContainer {
   position: relative;
 }
 .listPosts,
 .gridPosts {
   position: relative;
 }
+.title-view-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/* View buttons */
+/* View buttons ----------------*/
 .listButton,
 .gridButton {
   border: none;
@@ -27,30 +32,20 @@
   background-color: var(--white);
   cursor: pointer;
 }
-
 .listButton:hover,
 .gridButton:hover {
   background-color: var(--pink);
   color: var(--white);
 }
-
 .active {
   background-color: var(--pink);
   color: var(--white);
 }
-
-.title-view-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .view-icon-container {
   display: flex;
   align-items: baseline;
   padding-right: 15px;
 }
-
 .view-p {
   padding: 0 10px 0 0;
   font-weight: bold;
@@ -62,7 +57,6 @@
 }
 
 /* Post tiles --------*/
-
 a {
   text-decoration: none;
 }
@@ -123,7 +117,6 @@ a {
   display: grid;
   grid-template-columns: 1fr;
 }
-
 .grid-image-container {
   margin: 0 auto;
   width: calc(100% - 30px);
@@ -132,7 +125,6 @@ a {
   background-position: center;
   background-size: cover;
 }
-
 .grid-post-container {
   z-index: 0;
   background-color: var(--white);
@@ -150,7 +142,6 @@ a {
 .grid-title {
   margin-top: 0;
 }
-
 .grid-title-container {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   width: calc(100% - 30px);
@@ -158,7 +149,6 @@ a {
   margin: 0 auto;
   padding: 15px;
 }
-
 .grid-title-container:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
@@ -194,9 +184,3 @@ a {
     font-size: 1.8rem;
   }
 }
-/* Extra Large Screens-------------*/
-
-/* 
--------------*/
-/* 
--------------*/
