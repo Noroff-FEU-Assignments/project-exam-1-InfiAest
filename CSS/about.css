@@ -8,6 +8,7 @@
   --darkgold: #604800;
 }
 
+/*Images ----------------*/
 .about-image1 {
   display: flex;
   width: calc(100% - 15px);
@@ -18,7 +19,6 @@
   width: calc(100% - 15px);
   height: auto;
 }
-
 .two-image-container {
   display: flex;
   align-items: center;
