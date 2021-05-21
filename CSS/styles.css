@@ -9,7 +9,15 @@
 }
 
 /*General styles ----------------*/
+body {
+  margin: 0 5%;
+  background-color: var(--grey);
+}
+main {
+  margin: 0 15px;
+}
 
+/*text styling ----------------*/
 h1 {
   font-size: 2.5rem;
   padding: 0 15px;
@@ -43,7 +51,6 @@ h3 {
   font-weight: 800;
   font-style: normal;
 }
-
 p {
   font-weight: 400;
   font-size: 1rem;
@@ -66,21 +73,12 @@ p {
   font-weight: bold;
 }
 
-body {
-  margin: 0 5%;
-  background-color: var(--grey);
-}
-main {
-  margin: 0 15px;
-}
-
-/*grunge text styling-----------*/
+/*Grunge text styling-----------*/
 .grunge-container {
   display: flex;
   align-items: center;
   width: fit-content;
 }
-
 .text-mask-white {
   background: url(/images/grunge-text-overlay.jpg) no-repeat;
   background-size: cover;
@@ -138,11 +136,9 @@ main {
   background: #e02c4e;
   box-shadow: 0px 0px 1px 1px #e02c4e;
 }
-
 .pulse {
   animation: pulse-animation 1s infinite;
 }
-
 @keyframes pulse-animation {
   0% {
     box-shadow: 0 0 0 0px rgba(224, 44, 78, 0.9);
@@ -152,7 +148,7 @@ main {
   }
 }
 
-/*Error page styling ------------*/
+/*Error styling ------------*/
 .error-page {
   margin: 0 auto;
   max-width: 500px;
@@ -200,8 +196,8 @@ main {
   transform: scale(1.05);
   cursor: pointer;
 }
-/* Header image styling ---------- */
 
+/*Header image styling ---------- */
 .header-logo-container {
   margin: 0 auto;
   width: 150px;
@@ -220,7 +216,6 @@ main {
 }
 
 /* Nav styling ------------- */
-
 #hamburger-menu,
 nav {
   display: none;
@@ -238,7 +233,6 @@ nav {
 .fa-bars {
   padding: 10px;
 }
-
 #hamburger-menu:checked ~ nav,
 #hamburger-menu:checked ~ .search-box {
   display: block;
@@ -250,7 +244,6 @@ nav {
   justify-content: flex-start;
   background-color: var(--grey);
 }
-
 .navbar {
   display: flex;
   position: relative;
@@ -262,7 +255,6 @@ nav {
   min-height: 50px;
   align-items: center;
 }
-
 nav ul {
   padding: 0;
   margin: 0;
@@ -280,7 +272,6 @@ nav a {
   color: var(--white);
   text-decoration: none;
 }
-
 nav a:hover {
   background-color: var(--pink);
 }
@@ -407,7 +398,7 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* Button styling ------------- */
+/* CTA Button styling ------------- */
 .cta-button {
   background-color: var(--pink);
   border: none;
@@ -435,13 +426,11 @@ nav a:hover {
 footer {
   margin-top: 100px;
 }
-
 .social-media-container {
   background-color: var(--grey);
   margin-top: 30px;
   padding: 3rem 1rem;
 }
-
 footer p {
   color: var(--white);
   text-transform: uppercase;
@@ -450,14 +439,12 @@ footer p {
   padding-top: 0;
   margin-top: 0;
 }
-
 .icon-container {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
   width: 100%;
 }
-
 .fa-youtube,
 .fa-spotify,
 .fa-facebook,
@@ -619,7 +606,5 @@ footer p {
     width: 220px;
   }
 }
-/* 
-  -------------*/
 /* 
   -------------*/
