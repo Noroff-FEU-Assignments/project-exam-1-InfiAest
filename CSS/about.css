@@ -32,6 +32,8 @@
   margin-left: 10%;
 }
 
+/* Media Queries
+-------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
   .two-image-container {

@@ -50,7 +50,39 @@
                     <p class="contact-info post2">If you would like to contact us please send a message using the form below and we will be in touch as soon as possible. Please allow us 3-4 working days to repond, we are working as fast as we can.</p>
                     <p class="contact-info">We look forward to hearing from you!</p>
                 </div>
-                
+                <form id="contactForm">
+                    <div>
+                        <label class="form-labels">
+                            <h2 class="form-labels">Name (minimum 5 characters)</h2>
+                            <input name="name" id="name" placeholder="Matt Woods">
+                        </label>
+                        <div class="form-error" id="nameError"><p class="error-text">Please enter at least 5 characters</p></div>
+                    </div>
+                    <div>
+                        <label class="form-labels">
+                            <h2 class="form-labels">Email (required)</h2>
+                            <input name="email" id="email" placeholder="mattwoods@mail.com">
+                        </label>
+                        <div class="form-error" id="emailError"><p class="error-text">Please enter a valid email address</p></div>
+                    </div>
+                    <div>
+                        <label class="form-labels">
+                            <h2 class="form-labels">Subject (minimum 15 characters)</h2>
+                            <input name="subject" id="subject" placeholder="When is the next AC/DC gig?">
+                        </label>
+                        <div class="form-error" id="subjectError"><p class="error-text">Subject must be at least 15 characters</p></div>
+                    </div>
+                    <div>
+                        <label class="form-labels">
+                            <h2 class="form-labels">Message (minimum 26 characters)</h2>
+                            <textarea id="message" name="message" placeholder="Write something here.."></textarea>
+                        </label>  
+                    </div>
+                    <div class="form-error" id="messageError"><p class="error-text">Message should be more than 25 characters</p></div>
+                    <div class="button-container">
+                        <button class="cta-button">Send Message</button>
+                    </div>
+                </form>
                 <div id="validation-modal" class="validation-pop-up">
                     <div class="modal-content">
                         <header class="modal-header">
@@ -71,39 +103,6 @@
                         </div>
                     </div>
                 </div>
-                <form id="contactForm">
-                    <div>
-                        <label class="form-labels">
-                            <h2 class="form-labels">Name (minimum 5 characters)</h2>
-                            <input name="name" id="name" placeholder="Matt Woods">
-                        </label>
-                        <div class="form-error" id="nameError"><p class="error-message">Please enter at least 5 characters</p></div>
-                    </div>
-                    <div>
-                        <label class="form-labels">
-                            <h2 class="form-labels">Email (required)</h2>
-                            <input name="email" id="email" placeholder="mattwoods@mail.com">
-                        </label>
-                        <div class="form-error" id="emailError"><p class="error-message">Please enter a valid email address</p></div>
-                    </div>
-                    <div>
-                        <label class="form-labels">
-                            <h2 class="form-labels">Subject (minimum 15 characters)</h2>
-                            <input name="subject" id="subject" placeholder="When is the next AC/DC gig?">
-                        </label>
-                        <div class="form-error" id="subjectError"><p class="error-message">Subject must be at least 15 characters</p></div>
-                    </div>
-                    <div>
-                        <label class="form-labels">
-                            <h2 class="form-labels">Message (minimum 26 characters)</h2>
-                            <textarea id="message" name="message" placeholder="Write something here.."></textarea>
-                        </label>  
-                    </div>
-                    <div class="form-error" id="messageError"><p class="error-message">Message should be more than 25 characters</p></div>
-                    <div class="button-container">
-                        <button class="cta-button">Send Message</button>
-                    </div>
-                </form>
             </div>
 
             <div class="search-results"></div>
@@ -113,7 +112,7 @@
         </main>
         
         <footer>         
-            <div class="dark-grey-footer-div"></div>
+            <div class="white-footer-div"></div>
             <div class="footer-logo-container">
                 <a href="index.html"><img src="images/Logo-version2-inverted-500px.jpg" class="footer-logo" alt="Live.Rock Logo which acts as a home button"></a>
             </div>

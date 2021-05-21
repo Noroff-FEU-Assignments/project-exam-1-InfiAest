@@ -179,6 +179,8 @@ main a {
   display: none;
 } */
 
+/* Media Queries
+-------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
   .title-container {

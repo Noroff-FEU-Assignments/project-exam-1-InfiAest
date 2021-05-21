@@ -8,6 +8,7 @@
   --darkgold: #604800;
 }
 
+/*Images ----------------*/
 .post-image1,
 .post-paragraph1,
 .post-image2,
@@ -16,7 +17,6 @@
   position: relative;
   margin: 50px 0;
 }
-
 .image-1,
 .image-2,
 .image-3 {
@@ -38,6 +38,56 @@
   height: min-content;
 }
 
+/* Image modal Styling
+-------------*/
+.image-pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all 0.35s ease-in;
+  z-index: 20;
+}
+.modal-header {
+  display: block;
+  height: 50px;
+}
+.modal-content {
+  position: relative;
+  max-width: max-content;
+  max-height: max-content;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.image-frame-modal {
+  background-color: var(--white);
+  padding: 5px;
+}
+.modal-image {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 80vh;
+}
+.close {
+  color: var(--lightgold);
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: var(--darkgold);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Text ----------------*/
 .latest-quote {
   color: var(--lightgold);
   font-family: novecento-slab-condensed, serif;
@@ -71,63 +121,9 @@
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-/* Image modal Styling
+
+/* Media Queries
 -------------*/
-.image-pop-up {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.9);
-  transition: all 0.35s ease-in;
-  z-index: 20;
-}
-
-.modal-header {
-  display: block;
-  height: 50px;
-}
-
-.modal-content {
-  position: relative;
-  max-width: max-content;
-  max-height: max-content;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.image-frame-modal {
-  background-color: var(--white);
-  padding: 5px;
-}
-.modal-image {
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 80vh;
-}
-
-.close {
-  color: var(--lightgold);
-  float: right;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: var(--darkgold);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Tablet and smaller screen sizes-------------*/
-@media (min-width: 641px) {
-}
-
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
   .latest-quote::before,
@@ -135,11 +131,3 @@
     font-size: 1.8rem;
   }
 }
-
-/* Extra Large Screens-------------*/
-@media only screen and (min-width: 1281px) {
-}
-/* 
-      -------------*/
-/* 
-      -------------*/

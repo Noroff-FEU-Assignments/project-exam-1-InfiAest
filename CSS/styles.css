@@ -484,13 +484,15 @@ footer p {
 .footer-logo {
   width: 150px;
 }
-.dark-grey-footer-div {
+.white-footer-div {
   height: 10px;
   width: 100%;
   margin-bottom: 30px;
   background-color: var(--white);
 }
 
+/* Media Queries
+-------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
   .cta-button {
