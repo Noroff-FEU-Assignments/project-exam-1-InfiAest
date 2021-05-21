@@ -2,7 +2,7 @@
 window.onscroll = function() {stickyNav()};
 
 // Get the navbar
-var navbar = document.querySelector("#wrapper");
+const navbar = document.querySelector("#navcontainer");
 // get the nav logo
 const navLogo = document.querySelector(".nav-logo");
 

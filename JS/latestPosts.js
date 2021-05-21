@@ -121,26 +121,34 @@ function createLatestPosts(result) {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(x) {
+  showSlides(slideIndex += x);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(x) {
+  showSlides(slideIndex = x);
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+function showSlides(x) {
+  const slides = document.getElementsByClassName("slides");
+  const dots = document.getElementsByClassName("dot");
+
+  if (x > slides.length) {
+      slideIndex = 1
+    };
+
+  if (x < 1) {
+      slideIndex = slides.length
+    };
+
+  for (var i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
-  }
+  };
+
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
-  }
+  };
+  
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
