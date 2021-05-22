@@ -118,7 +118,18 @@ searchButton.onclick = async function getSearchResults() {
 
 }
 
+//search on click and enter
 searchform.addEventListener("submit", (event) => {
   event.preventDefault();
   searchButton.click();
+  hideNav();
 });
+
+//close the nav when you search if the hamburger menu is checked
+function hideNav(){
+  let navOpen = document.querySelector("#hamburger-menu").checked;
+
+  if(navOpen = true){
+    document.querySelector("#hamburger-menu").checked = false;
+  }
+}

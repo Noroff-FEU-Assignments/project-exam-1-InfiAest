@@ -44,9 +44,9 @@ async function getPosts() {
 
     catch(error) {
 
-        const container = document.querySelector(".blog-posts");
+        const blogPostsContainer = document.querySelector(".blog-posts");
 
-        container.innerHTML = `<div class="error-page">
+        blogPostsContainer.innerHTML = `<div class="error-page">
                                     <div class="grunge-container">
                                         <h1 class="text-mask-white error-heading">Oops! Something is broken</h1>
                                     </div>

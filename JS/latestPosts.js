@@ -21,10 +21,10 @@ async function getLatestPosts() {
 
     catch(error) {
 
-        const container = document.querySelector(".latestPosts");
+        const latestPosts = document.querySelector(".latestPosts");
         const mostViewed = document.querySelector(".most-viewed");
 
-        container.innerHTML = `<div class="error-message">
+        latestPosts.innerHTML = `<div class="error-message">
                                     <div class="grunge-container">
                                         <h1 class="text-mask-white error-heading">Oops! Something is broken</h1>
                                     </div>

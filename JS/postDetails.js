@@ -25,9 +25,9 @@ async function getPostDetails() {
         createPostDetails(details);
     }
     catch (error) {
-      const container = document.querySelector(".page-content");
+      const contentContainer = document.querySelector(".page-content");
 
-        container.innerHTML = `<div class="error-message">
+        contentContainer.innerHTML = `<div class="error-message">
                                     <div class="grunge-container">
                                         <h1 class="text-mask-white error-heading">Oops! Something is broken</h1>
                                     </div>

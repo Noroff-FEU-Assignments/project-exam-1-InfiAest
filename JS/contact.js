@@ -49,13 +49,13 @@ function validateForm(event) {
 
 }
 
-const span = document.getElementsByClassName("close")[0];
+const closeButton = document.getElementsByClassName("close")[0];
 const homeButton = document.querySelector(".home-button");
 const newMessageButton = document.querySelector(".new-message-button");
 
 
 /* Close button --------*/
-span.onclick = function() { 
+closeButton.onclick = function() { 
   validationModal.style.display = "none";
   window.location = "contact.html";
 }

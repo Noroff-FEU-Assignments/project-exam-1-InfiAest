@@ -16,10 +16,10 @@ async function getMostViewedPosts() {
 
     catch(error) {
 
-        const container = document.querySelector(".latestPosts");
+        const latestPosts = document.querySelector(".latestPosts");
         const mostViewed = document.querySelector(".most-viewed");
 
-        container.style.display = "none";
+        latestPosts.style.display = "none";
 
         mostViewed.innerHTML = `<div class="error-message">
                                     <div class="grunge-container">
@@ -100,7 +100,7 @@ function createTopViewedPosts(result) {
 
 async function getMostViewedPostDetails(postIds) {
 
-    const html = document.querySelector(".mostViewedPosts");
+    const mostViewedPostsContainer = document.querySelector(".mostViewedPosts");
     
     const url = "https://charlottelucas.no/wp-json/wp/v2/posts/";
 
@@ -114,7 +114,7 @@ async function getMostViewedPostDetails(postIds) {
 
             // console.log(result);
 
-            html.innerHTML += `<div class="post-container">
+            mostViewedPostsContainer.innerHTML += `<div class="post-container">
                                             <a href="post.html?id=${result.id}" alt="Link to ${result.acf.post_title} post" class="post-link">
                                                 <div class="most-viewed-post-image-container" style="background-image: url(${result.acf.image1})">
                                                     <div class="most-viewed-title-container">
@@ -131,10 +131,10 @@ async function getMostViewedPostDetails(postIds) {
     
         catch(error) {
 
-            const container = document.querySelector(".latestPosts");
+            const latestPosts = document.querySelector(".latestPosts");
             const mostViewed = document.querySelector(".most-viewed");
 
-            container.style.display = "none";
+            latestPosts.style.display = "none";
 
             mostViewed.innerHTML = `<div class="error-message">
                                         <div class="grunge-container">
